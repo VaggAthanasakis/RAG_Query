@@ -1,0 +1,17 @@
+Using VectorStoreIndex
+
+Shipper: SKYSEALAND SHIPPING LINES
+CONSIGNEE: ARIAN MARITIME S.A
+Document number: 21072800108
+B/L Number: STFL21072190
+Type of Cargo: 17 WOODEN BOXES
+Total Weight: 7800.00 KGS
+
+Using DocumentSummaryIndex
+
+Shipper: SKYSEALAND SHIPPING LINES
+CONSIGNEE: ARIAN MARITIME S.A
+Document number: 21072800108
+B/L Number: STFL21072190
+Type of Cargo: Containers (17 WOODEN BOXES)
+Total Weight: 7800.00 KGS
