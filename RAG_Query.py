@@ -139,7 +139,7 @@ splitter = SentenceSplitter(chunk_size=500)
 
 #  This is a class from the llama_index library that represents a vector store index for efficient retrieval
 #  of documents based on their semantic similarity.
-vector_store_index = VectorStoreIndex.from_documents(documents)   
+vector_store_index = VectorStoreIndex.from_documents(documents, splitter=splitter)   
 
 # Build the query engine from the vector store index
 query_engine_vector_index = vector_store_index.as_query_engine()
