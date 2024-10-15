@@ -3,5 +3,6 @@ This python code is responsible for creating a Rag System using llama 3.1 8B
 -> As an output, it extracts info about shipper, consignee etc.
 -> In the code, a comparison of the methods DocumentSummaryIndex, VectorStoreIndex is been      
    held to find out which one of the two is the better way of extracting the relevant info.
+-> The same code has been used, with a different prompt, in order to extract terminology from 2 different documents.
 
 * The document can either be a native pdf file or a scanned document
