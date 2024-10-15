@@ -1,17 +1,17 @@
 Using VectorStoreIndex
 
-Shipper: SKYSEALAND SHIPPING LINES
-CONSIGNEE: ARIAN MARITIME S.A
-Document number: 21072800108
-B/L Number: STFL21072190
-Type of Cargo: 17 WOODEN BOXES
-Total Weight: 7800.00 KGS
+Shipper: HYDOIL EE
+CONSIGNEE: GoogsFieg@ APPA RITIME S.A.
+Document number: INV# HTTEXP-0221, EXP# 1472-010588-21, S/C NO# HTTEXP-0221
+B/L Number: SSL21169
+Type of Cargo: Seventeen wooden box (only)
+Total Weight: 10.00 Tons
 
 Using DocumentSummaryIndex
 
-Shipper: SKYSEALAND SHIPPING LINES
-CONSIGNEE: ARIAN MARITIME S.A
-Document number: 21072800108
-B/L Number: STFL21072190
-Type of Cargo: Containers (17 WOODEN BOXES)
-Total Weight: 7800.00 KGS
+Shipper: HYDOIL EE
+CONSIGNEE: GoogsFieg@ APPA RITIME S.A.
+Document number: HTTEXP-0221
+B/L Number: SSL21169
+Type of Cargo: Seventeen wooden box (only)
+Total Weight: 10.00 MT

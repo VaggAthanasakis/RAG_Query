@@ -107,8 +107,35 @@ Do not rewrite the question.
 Do not make an intro or an outro.
 """
 
+# prompt = f"""
+# Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
+# If a definition isn't given, provide a brief summary based on the context.
+
+# **Output Format:**
+
+# 1. Term: Definition
+
+# **Examples:**
+
+# 1. EXW: Ex Works
+# 2. FOB: Free On Board
+# 3. B/L: Bill of Lading
+# 4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
+
+# **Instructions:**
+
+# - Include all terms in CAPITALS as well as commonly used acronyms.
+# - Look for any bold or highlighted terms from the document.
+# - Provide concise definitions, even if not explicitly mentioned in the text.
+# - Do not add any additional comments, just the extracted terms and definitions.
+# """
+
+
 ########################################################
 # Try the VectorStoreIndex 
+
+# Specify the splitter
+splitter = SentenceSplitter(chunk_size=500)
 
 #  This is a class from the llama_index library that represents a vector store index for efficient retrieval
 #  of documents based on their semantic similarity.
@@ -129,10 +156,7 @@ with open(response_file, "w", encoding='utf-8') as file:
 ########################################################
 # Try DocumentSummaryIndex
 
-# Specify the splitter
-splitter = SentenceSplitter(chunk_size=256)
-
-document_summary_index = DocumentSummaryIndex.from_documents(documents)
+document_summary_index = DocumentSummaryIndex.from_documents(documents,splitter=splitter)
 query_engine_summary_index = document_summary_index.as_query_engine()
 
 # You can use the same prompt with the query_engine_summary_index
