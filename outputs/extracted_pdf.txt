@@ -4,14 +4,5 @@ Shipper: HYDOIL EE
 CONSIGNEE: GoogsFieg@ APPA RITIME S.A.
 Document number: INV# HTTEXP-0221, EXP# 1472-010588-21, S/C NO# HTTEXP-0221
 B/L Number: SSL21169
-Type of Cargo: Seventeen wooden box (only)
-Total Weight: 10.00 Tons
-
-Using DocumentSummaryIndex
-
-Shipper: HYDOIL EE
-CONSIGNEE: GoogsFieg@ APPA RITIME S.A.
-Document number: HTTEXP-0221
-B/L Number: SSL21169
-Type of Cargo: Seventeen wooden box (only)
-Total Weight: 10.00 MT
+Type of Cargo: Seventeen wooden box (containers)
+Total Weight: 10.00 MT (Metric Tons)
