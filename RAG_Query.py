@@ -50,7 +50,7 @@ def patched_predict(self, prompt, **kwargs):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("Resources\\TEST_PDF_3.pdf")
+input_file_path = ("Resources\\terminology_2.pdf")
 response_file = ("outputs\\extracted_pdf.txt")
 
 # Detect if the PDF is scanned
@@ -83,52 +83,52 @@ Settings.context_window = 2000
 
 
 # Create the prompt
-prompt = f"""
-Please extract the following details from the provided document:
-
-Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
-CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
-Document number: (Extract number (if exists) after keyword "Document number", "Doc No", or any reference to document number)
-B/L Number: (Extract number (if exists) after "B/L Number" or "Bill of Lading Number")
-Type of Cargo: (Extract type of cargo, such as containers, boxes, etc.)
-Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross weight")
-
-Ensure each piece of information is extracted and presented as:
-
-Shipper: [Extracted Shipper]
-CONSIGNEE: [Extracted Consignee]
-Document number: [Extracted Document Number]
-B/L Number: [Extracted B/L Number]
-Type of Cargo: [Extracted Cargo Type]
-Total Weight: [Extracted Total Weight]
-
-Instructions:
-Do not rewrite the question.
-Do not make an intro or an outro.
-"""
-
 # prompt = f"""
-# Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
-# If a definition isn't given, provide a brief summary based on the context.
+# Please extract the following details from the provided document:
 
-# **Output Format:**
+# Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
+# CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
+# Document number: (Extract number (if exists) after keyword "Document number", "Doc No", or any reference to document number)
+# B/L Number: (Extract number (if exists) after "B/L Number" or "Bill of Lading Number")
+# Type of Cargo: (Extract type of cargo, such as containers, boxes, etc.)
+# Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross weight")
 
-# 1. Term: Definition
+# Ensure each piece of information is extracted and presented as:
 
-# **Examples:**
+# Shipper: [Extracted Shipper]
+# CONSIGNEE: [Extracted Consignee]
+# Document number: [Extracted Document Number]
+# B/L Number: [Extracted B/L Number]
+# Type of Cargo: [Extracted Cargo Type]
+# Total Weight: [Extracted Total Weight]
 
-# 1. EXW: Ex Works
-# 2. FOB: Free On Board
-# 3. B/L: Bill of Lading
-# 4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
-
-# **Instructions:**
-
-# - Include all terms in CAPITALS as well as commonly used acronyms.
-# - Look for any bold or highlighted terms from the document.
-# - Provide concise definitions, even if not explicitly mentioned in the text.
-# - Do not add any additional comments, just the extracted terms and definitions.
+# Instructions:
+# Do not rewrite the question.
+# Do not make an intro or an outro.
 # """
+
+prompt = f"""
+Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
+If a definition isn't given, provide a brief summary based on the context.
+
+**Output Format:**
+
+1. Term: Definition
+
+**Examples:**
+
+1. EXW: Ex Works
+2. FOB: Free On Board
+3. B/L: Bill of Lading
+4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
+
+**Instructions:**
+
+- Include all terms in CAPITALS as well as commonly used acronyms.
+- Look for any bold or highlighted terms from the document.
+- Provide concise definitions, even if not explicitly mentioned in the text.
+- Do not add any additional comments, just the extracted terms and definitions.
+"""
 
 
 ########################################################
