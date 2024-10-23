@@ -2,13 +2,17 @@ from llama_index.core import SimpleDirectoryReader
 from llama_index.core import Document
 from llama_index.core import VectorStoreIndex, DocumentSummaryIndex
 from llama_index.core.node_parser import SentenceSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import Ollama
 from llama_index.core import Settings
 from langchain.llms import BaseLLM
 import pytesseract
 from pdf2image import convert_from_path
 from PyPDF2 import PdfReader
-
+from sentence_transformers import SentenceTransformer
+from langchain_ollama import OllamaEmbeddings
+import pymupdf4llm
+import pathlib
 
 # Function to extract text from a scanned PDF using OCR
 # Converts the pdf pages to images and then performs OCR on each page
@@ -50,27 +54,46 @@ def patched_predict(self, prompt, **kwargs):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("Resources\\terminology_2.pdf")
+input_file_path = ("Resources\\TEST_PDF_3.pdf")
 response_file = ("outputs\\extracted_pdf.txt")
+text_output_file = ("outputs\\TEST_PDF_3_TEXT.txt")
+
 
 # Detect if the PDF is scanned
 if is_pdf_scanned(input_file_path):
     # If the PDF is scanned, use OCR to extract the text
+
+    # Use Pytesseract
     extracted_text = extract_text_from_scanned_pdf(input_file_path)
+    with open(text_output_file, "w", encoding='utf-8') as file:
+        file.write(str(extracted_text))
+
     documents = [Document(text=extracted_text)]
 else:
     # If it's not scanned, load the document normally
     documents = SimpleDirectoryReader(
         input_files=[input_file_path]
     ).load_data()
+    # Open the file in write mode
+    with open(text_output_file, "w", encoding="utf-8") as file:
+        for doc in documents:
+        # Assuming each doc has a 'text' attribute containing the document's content
+            file.write(doc.text + "\n\n")  # Write each document's content to the file
 
+    # use pymupdf4llm
+    # extracted_text  = pymupdf4llm.to_markdown(input_file_path)
+    # pathlib.Path(text_output_file).write_bytes(extracted_text.encode())
+    # documents = [Document(text=extracted_text)]
 
 
 # load the LLM that we are going to use
-llm = Ollama(model="llama3.1:8b", temperature = 0.5)
+llm = Ollama(model="llama3.1:8b", temperature = 0.1)
 
 # https://docs.llamaindex.ai/en/stable/module_guides/supporting_modules/service_context_migration/
-embed_model = "local:BAAI/bge-small-en-v1.5"
+#embed_model = "local:BAAI/bge-small-en-v1.5"
+#embed_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+#embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+embed_model = OllamaEmbeddings(model="llama3.1:8b")
 
 
 # The Settings class in llama_index (formerly known as GPT Index) is used to configure
@@ -83,59 +106,66 @@ Settings.context_window = 2000
 
 
 # Create the prompt
-# prompt = f"""
-# Please extract the following details from the provided document:
-
-# Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
-# CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
-# Document number: (Extract number (if exists) after keyword "Document number", "Doc No", or any reference to document number)
-# B/L Number: (Extract number (if exists) after "B/L Number" or "Bill of Lading Number")
-# Type of Cargo: (Extract type of cargo, such as containers, boxes, etc.)
-# Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross weight")
-
-# Ensure each piece of information is extracted and presented as:
-
-# Shipper: [Extracted Shipper]
-# CONSIGNEE: [Extracted Consignee]
-# Document number: [Extracted Document Number]
-# B/L Number: [Extracted B/L Number]
-# Type of Cargo: [Extracted Cargo Type]
-# Total Weight: [Extracted Total Weight]
-
-# Instructions:
-# Do not rewrite the question.
-# Do not make an intro or an outro.
-# """
-
 prompt = f"""
-Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
-If a definition isn't given, provide a brief summary based on the context.
+Please extract the following details from the provided document:
 
-**Output Format:**
+Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
+CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
+Document number: (Extract number (if exists) after keyword "Document number", "Doc No", or any reference to document number)
+B/L Number: (Extract number (if exists) after "B/L Number" or "Bill of Lading Number")
+Type of Cargo: (Extract type of cargo, such as containers, boxes, etc.)
+Details of Cargo: (Extract all the items of the cargo)
+Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross weight")
 
-1. Term: Definition
+Ensure each piece of information is extracted and presented as:
 
-**Examples:**
+Shipper: [Extracted Shipper]
+CONSIGNEE: [Extracted Consignee]
+Document number: [Extracted Document Number]
+B/L Number: [Extracted B/L Number]
+Type of Cargo: [Extracted Cargo Type]
+Details of Cargo: [Extract Cargo Items]
+Total Weight: [Extracted Total Weight]
 
-1. EXW: Ex Works
-2. FOB: Free On Board
-3. B/L: Bill of Lading
-4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
-
-**Instructions:**
-
-- Include all terms in CAPITALS as well as commonly used acronyms.
-- Look for any bold or highlighted terms from the document.
-- Provide concise definitions, even if not explicitly mentioned in the text.
-- Do not add any additional comments, just the extracted terms and definitions.
+Instructions:
+Do not rewrite the question.
+Do not make an intro or an outro.
 """
+
+# prompt = f"""
+# Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
+# If a definition isn't given, provide a brief summary based on the context.
+
+# **Output Format:**
+
+# 1. Term: Definition
+
+# **Examples:**
+
+# 1. EXW: Ex Works
+# 2. FOB: Free On Board
+# 3. B/L: Bill of Lading
+# 4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
+
+# **Instructions:**
+
+# - Include all terms in CAPITALS as well as commonly used acronyms.
+# - Look for any bold or highlighted terms from the document.
+# - Provide concise definitions, even if not explicitly mentioned in the text.
+# - Do not add any additional comments, just the extracted terms and definitions.
+# """
 
 
 ########################################################
 # Try the VectorStoreIndex 
 
 # Specify the splitter
-splitter = SentenceSplitter(chunk_size=500)
+splitter = SentenceSplitter(chunk_size=1000)
+# splitter = RecursiveCharacterTextSplitter(
+#     chunk_size=512,   # Size of each chunk
+#     chunk_overlap=50  # Overlap of 50 tokens between chunks
+# )
+
 
 #  This is a class from the llama_index library that represents a vector store index for efficient retrieval
 #  of documents based on their semantic similarity.
