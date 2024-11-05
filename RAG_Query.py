@@ -18,12 +18,12 @@ import pathlib
 # Converts the pdf pages to images and then performs OCR on each page
 # in order to extract the text
 def extract_text_from_scanned_pdf(file_path):
-    pages = convert_from_path(file_path)  # Convert PDF pages to images
+    pages = convert_from_path(file_path, dpi=600)  # Convert PDF pages to images
     extracted_text = ""
     
     for page in pages:
-        text = pytesseract.image_to_string(page)  # Perform OCR on each page
-        extracted_text += text + "\n\n"           # Add the text to the output
+        page_text = pytesseract.image_to_string(page)  # Perform OCR on each page
+        extracted_text += f"{page_text}\n"             # Add the text to the output
     
     return extracted_text
 
@@ -49,14 +49,19 @@ def patched_predict(self, prompt, **kwargs):
     return self.invoke(prompt, **kwargs)
 
 
+# load a specific prompt from a given file
+def load_prompt(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return file.read()
+
 
 ## main
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("Resources\\TEST_PDF_3.pdf")
-response_file = ("outputs\\extracted_pdf.txt")
-text_output_file = ("outputs\\TEST_PDF_3_TEXT.txt")
+input_file_path = ("Resources/SOIL_ANALYSIS.pdf")
+response_file = ("outputs/SOIL_ANALYSIS_RES.txt")
+text_output_file = ("outputs/SOIL_ANALYSIS_TEXT.txt")
 
 
 # Detect if the PDF is scanned
@@ -80,11 +85,6 @@ else:
         # Assuming each doc has a 'text' attribute containing the document's content
             file.write(doc.text + "\n\n")  # Write each document's content to the file
 
-    # use pymupdf4llm
-    # extracted_text  = pymupdf4llm.to_markdown(input_file_path)
-    # pathlib.Path(text_output_file).write_bytes(extracted_text.encode())
-    # documents = [Document(text=extracted_text)]
-
 
 # load the LLM that we are going to use
 llm = Ollama(model="llama3.1:8b", temperature = 0.1)
@@ -101,59 +101,10 @@ embed_model = OllamaEmbeddings(model="llama3.1:8b")
 # embedding models, and other system components.
 Settings.llm = llm
 Settings.embed_model = embed_model
-Settings.context_window = 2000
+Settings.context_window = 2048
 
 
-
-# Create the prompt
-prompt = f"""
-Please extract the following details from the provided document:
-
-Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
-CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
-Document number: (Extract number (if exists) after keyword "Document number", "Doc No", or any reference to document number)
-B/L Number: (Extract number (if exists) after "B/L Number" or "Bill of Lading Number")
-Type of Cargo: (Extract type of cargo, such as containers, boxes, etc.)
-Details of Cargo: (Extract all the items of the cargo)
-Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross weight")
-
-Ensure each piece of information is extracted and presented as:
-
-Shipper: [Extracted Shipper]
-CONSIGNEE: [Extracted Consignee]
-Document number: [Extracted Document Number]
-B/L Number: [Extracted B/L Number]
-Type of Cargo: [Extracted Cargo Type]
-Details of Cargo: [Extract Cargo Items]
-Total Weight: [Extracted Total Weight]
-
-Instructions:
-Do not rewrite the question.
-Do not make an intro or an outro.
-"""
-
-# prompt = f"""
-# Extract all terms and their definitions from the provided document. Focus on the glossary or sections that explicitly list terms. Include any abbreviations, acronyms, and their corresponding explanations.
-# If a definition isn't given, provide a brief summary based on the context.
-
-# **Output Format:**
-
-# 1. Term: Definition
-
-# **Examples:**
-
-# 1. EXW: Ex Works
-# 2. FOB: Free On Board
-# 3. B/L: Bill of Lading
-# 4. Terminal: The port or depot at which containers are loaded or unloaded onto or from container vessels, railways or trucks
-
-# **Instructions:**
-
-# - Include all terms in CAPITALS as well as commonly used acronyms.
-# - Look for any bold or highlighted terms from the document.
-# - Provide concise definitions, even if not explicitly mentioned in the text.
-# - Do not add any additional comments, just the extracted terms and definitions.
-# """
+prompt = load_prompt("Prompts/Soil_Analysis_prompt.txt")
 
 
 ########################################################
