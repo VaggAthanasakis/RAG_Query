@@ -11,8 +11,17 @@ from pdf2image import convert_from_path
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 from langchain_ollama import OllamaEmbeddings
-import pymupdf4llm
 import pathlib
+import pymupdf4llm
+import pdfplumber
+import fitz
+from pdfminer.high_level import extract_text
+from tika import parser
+from langchain.document_loaders import PyMuPDFLoader
+
+
+
+
 
 # Function to extract text from a scanned PDF using OCR
 # Converts the pdf pages to images and then performs OCR on each page
@@ -76,14 +85,61 @@ if is_pdf_scanned(input_file_path):
     documents = [Document(text=extracted_text)]
 else:
     # If it's not scanned, load the document normally
-    documents = SimpleDirectoryReader(
-        input_files=[input_file_path]
-    ).load_data()
-    # Open the file in write mode
-    with open(text_output_file, "w", encoding="utf-8") as file:
-        for doc in documents:
-        # Assuming each doc has a 'text' attribute containing the document's content
-            file.write(doc.text + "\n\n")  # Write each document's content to the file
+        # Use PDFPlumber
+    text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
+    with pdfplumber.open(input_file_path) as pdf:
+        full_text = ""
+        for page in pdf.pages:
+            full_text += page.extract_text()  # Extracts text page-by-page
+    pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+
+    # # Use SimpleDirectoryReader
+    # documents = SimpleDirectoryReader(
+    #     input_files=[input_file_path]
+    # ).load_data()
+
+    # # Open the file in write mode
+    # with open(text_output_file, "w", encoding="utf-8") as file:
+    #     for doc in documents:
+    #     # Assuming each doc has a 'text' attribute containing the document's content
+    #         file.write(doc.text + "\n\n")  # Write each document's content to the file
+
+    # # Use pymupdf4llm 
+    # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_FOR_LLM.txt"
+    # full_text = pymupdf4llm.to_markdown(input_file_path)
+    # pathlib.Path(text_output_file).write_bytes(full_text.encode())
+    
+
+    # # Use fitz
+    # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_fitz.txt"
+    # doc = fitz.open(input_file_path)
+    # full_text = ""
+    # for page_num in range(doc.page_count):
+    #     page = doc[page_num]
+    #     full_text += page.get_text()  # 'text' parameter extracts p
+    # pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+    # # Use PDFMiner
+    # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFMiner.txt"
+    # full_text = extract_text(input_file_path)
+    # pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+    # # Use Tika
+    # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_Tika.txt"
+    # parsed = parser.from_file(input_file_path)
+    # full_text = parsed["content"]
+    # pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+    # # Use PyPDF2
+    # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PyPDF2.txt"
+    # reader = PdfReader(input_file_path)
+    # full_text = ""
+    # for page in reader.pages:
+    #     full_text += page.extract_text()
+    # pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+
 
 
 # load the LLM that we are going to use
