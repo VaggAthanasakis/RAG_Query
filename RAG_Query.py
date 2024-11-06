@@ -4,6 +4,7 @@ from llama_index.core import VectorStoreIndex, DocumentSummaryIndex
 from llama_index.core.node_parser import SentenceSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from llama_index.core import Settings
 from langchain.llms import BaseLLM
 import pytesseract
@@ -14,10 +15,11 @@ from langchain_ollama import OllamaEmbeddings
 import pathlib
 import pymupdf4llm
 import pdfplumber
-import fitz
-from pdfminer.high_level import extract_text
-from tika import parser
-from langchain.document_loaders import PyMuPDFLoader
+import ocrmypdf
+#import fitz
+#from pdfminer.high_level import extract_text
+#from tika import parser
+
 
 
 
@@ -68,9 +70,14 @@ def load_prompt(filename):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("Resources/SOIL_ANALYSIS.pdf")
-response_file = ("outputs/SOIL_ANALYSIS_RES.txt")
-text_output_file = ("outputs/SOIL_ANALYSIS_TEXT.txt")
+input_file_path = ("RAG_Query/Resources/TEST_PDF_3.pdf") 
+response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
+text_output_file = ("RAG_Query/outputs/TEST_PDF_3_TEXT.txt")
+
+# input_file_path = ("RAG_Query/OCR/OCR_outputs/TEST_PDF_3_OCRmyPDF_def.pdf") 
+# response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
+# text_output_file = ("RAG_Query/outputs/TEST_PDF_3_TEXT.txt")
+
 
 
 # Detect if the PDF is scanned
@@ -78,21 +85,27 @@ if is_pdf_scanned(input_file_path):
     # If the PDF is scanned, use OCR to extract the text
 
     # Use Pytesseract
-    extracted_text = extract_text_from_scanned_pdf(input_file_path)
-    with open(text_output_file, "w", encoding='utf-8') as file:
-        file.write(str(extracted_text))
+    # extracted_text = extract_text_from_scanned_pdf(input_file_path)
+    # with open(text_output_file, "w", encoding='utf-8') as file:
+    #     file.write(str(extracted_text))
 
-    documents = [Document(text=extracted_text)]
-else:
-    # If it's not scanned, load the document normally
-        # Use PDFPlumber
-    text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
-    with pdfplumber.open(input_file_path) as pdf:
-        full_text = ""
-        for page in pdf.pages:
-            full_text += page.extract_text()  # Extracts text page-by-page
+    # documents = [Document(text=extracted_text)]
+    
+    # if the input file is scanned, convert it to native pdf
+    # using ocr and then process it normally
+    print("\nPerforming OCR...\n")
+    ocrmypdf.ocr(input_file_path, input_file_path, image_dpi=600)    
+    
+# If it's not scanned, load the document normally
+# Use PDFPlumber
+#text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
+with pdfplumber.open(input_file_path) as pdf:
+    full_text = ""
+    for page in pdf.pages:
+        full_text += page.extract_text()  # Extracts text page-by-page
     pathlib.Path(text_output_file).write_bytes(full_text.encode())
 
+    documents = [Document(text=full_text)]
 
     # # Use SimpleDirectoryReader
     # documents = SimpleDirectoryReader(
@@ -143,7 +156,7 @@ else:
 
 
 # load the LLM that we are going to use
-llm = Ollama(model="llama3.1:8b", temperature = 0.1)
+llm = OllamaLLM(model="llama3.1:8b", temperature = 0.1)
 
 # https://docs.llamaindex.ai/en/stable/module_guides/supporting_modules/service_context_migration/
 #embed_model = "local:BAAI/bge-small-en-v1.5"
@@ -160,14 +173,14 @@ Settings.embed_model = embed_model
 Settings.context_window = 2048
 
 
-prompt = load_prompt("Prompts/Soil_Analysis_prompt.txt")
+prompt = load_prompt("RAG_Query/Prompts/Info_extraction_prompt.txt")
 
 
 ########################################################
 # Try the VectorStoreIndex 
 
 # Specify the splitter
-splitter = SentenceSplitter(chunk_size=1000)
+splitter = SentenceSplitter(chunk_size=800)
 # splitter = RecursiveCharacterTextSplitter(
 #     chunk_size=512,   # Size of each chunk
 #     chunk_overlap=50  # Overlap of 50 tokens between chunks
