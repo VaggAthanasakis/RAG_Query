@@ -1,225 +1,225 @@
-Εργαστήριο Αναλύσεων Εδάφους, Φυτικών Ιστών & Αρδευτικού Νερού
-ΕΚΘΕΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΑΝΑΛΥΣΗΣ
-ΕΠΩΝΥΜΟ: ΖΑΝΝΙΑΣ
-ΟΝΟΜΑ: ΙΩΑΝΝΗΣ
-ΠΑΤΡΩΝΥΜΟ:
-Α.Φ.Μ.:
-ΔΙΕΥΘΥΝΣΗ:
-ΤΟΠΙΚΗ ΚΟΙΝΟΤΗΤΑ/ ΝΟΜΟΣ: ΟΡΧΟΜΕΝΟΣ ΒΟΙΩΤΙΑΣ
-ΤΗΛΕΦΩΝΟ / E-MAIL:
-ΤΟΠΟΘΕΣΙΑ ΑΓΡΟΥ: ORCH 2 / ΚΑΜΠΟΣ
-ΧΩΡΙΟ / ΠΟΛΗ ΟΡΧΟΜΕΝΟΣ ΒΟΙΩΤΙΑΣ
-ΕΚΤΑΣΗ (ΣΤΡ):
-ΚΑΛΛΙΕΡΓΕΙΑ: ΒΑΜΒΑΚΙ
-ΠΟΙΚΙΛΙΑ:
-ΚΛΙΣΗ ΕΔΑΦΟΥΣ:
-ΤΡΟΠΟΣ ΑΡΔΕΥΣΗΣ:
-ΕΙΔΟΣ ΔΕΙΓΜΑΤΩΝ: ΕΔΑΦΟΣ
-ΔΕΙΓΜΑΤΟΛΗΨΙΑ: Ο ΙΔΙΟΣ
-ΗΜ/ΝΙΑ ΠΑΡΑΛΑΒΗΣ: 25/4/2024
-ΚΩΔΙΚΟΙ ΔΕΙΓΜΑΤΩΝ: 240436
-ΕΙΔΟΣ ΑΝΑΛΥΣΗΣ: ΠΛΗΡΗΣ
-Στοιχεία Επικοινωνίας Εργαστηρίου:
-Διεύθυνση: Σαρανταπόρου 148, 43100 Καρδίτσα
-Τηλ. 2441076184, Fax: 2441076188, Κιν: 6976777093
+Soil, Plant Tissue & Irrigation Water Analysis Laboratory
+ANALYSIS RESULTS REPORT
+LAST NAME: ZANNIAS
+NAME: IOANNIS
+LAST NAME:
+A.F.M.:
+ADDRESS:
+LOCAL COMMUNITY/ COUNTY: ORCHOMENOS VIOTIAS
+PHONE / EMAIL:
+FIELD LOCATION: ORCH 2 / KAMPOS
+VILLAGE / TOWN ORCHOMENOS VIOTIA
+EXTENSION (STR):
+CROP: COTTON
+VARIETY:
+GROUND SLOPE:
+IRRIGATION METHOD:
+TYPE OF SAMPLES: SOIL
+SAMPLING: THE SAME
+DATE OF RECEIPT: 25/4/2024
+SAMPLE CODES: 240436
+ANALYSIS TYPE: FULL
+Laboratory Contact Details:
+Address: Sarantaporou 148, 43100 Karditsa
+Tel. 2441076184, Fax: 2441076188, Mobile: 6976777093
 E-mail: info@agroeco.gr Site: www.agroeco.gr
-Καρδίτσα 2024
-Η έκθεση αποτελεσμάτων δε μπορεί να αναπαραχθεί τμηματικά χωρίς την έγκριση του εργαστηρίου
-Τα αποτελέσματα των αναλύσεων ανταποκρίνονται στα δείγματα που αναλύθηκαν στη συγκεκριμένη ημερομηνίαΚωδικός Δείγματος 240436
-Βάθος Δειγματοληψίας (εκ.) 0-30 Περίοδος Ανάλυσης 26/4/2024 έως 3/5/2024
-Α. ΒΑΣΙΚΕΣ ΑΝΑΛΥΣΕΙΣ ΕΔΑΦΟΥΣ
-Υδραυλικά Στοιχεία
-Εδαφική Υγρασία: 7,14 %
-Φαινόμενο Ειδικό Βάρος: 1,16 g/cm3 Ειδικό Βάρος: g/cm3 Πορώδες:
-Ποσοστό Νερού Κορεσμού (SP): 65,57 % Υδατοϊκανότητα (FC): 36,06 %
-Σημείο Μόνιμης Μάρανσης (PWP): 16,39 % Διαθέσιμο Νερό: 19,67 %
-Υδατοχωρητικότητα: %
-Μηχανική Σύσταση
-ΠΑΡΑΜΕΤΡΟΣ ΑΠΟΤΕΛΕΣΜΑ ΜΟΝΑΔΑ ΜΕΘΟΔΟΣ ΑΞΙΟΛΟΓΗΣΗ
-Άμμος (Sand): 5,29 %
-Ιλύς (Silt): 20,78 %
-Άργιλος (Clay): 73,92 % Bouyoucos Αργιλώδες C CLAY Βαρύ Έδαφος
-Φυσικοχημικές Ιδιότητες
-ΠΑΡΑΜΕΤΡΟΣ ΑΠΟΤΕΛΕΣΜΑ ΜΟΝΑΔΑ ΜΕΘΟΔΟΣ ΧΑΜΗΛΗ ΤΙΜΗ ΜΕΣΗ ΤΙΜΗ ΥΨΗΛΗ ΤΙΜΗ
-pH : 7,78 Πάστα Κορεσμου
-Ηλεκτ. Αγωγιμότητα: 304,00 μS/cm Νερό Κορεσμου
-Ολικό CaCO 3: 17,30 % κ.β. Ογκομετρικά
-Ενεργό CaCO 3: 5,18 % κ.β. C2O4(NH4)2
-Οργανική ουσία: 4,53 % Υγρή οξείδωση
-Διαθέσιμες μορφές θρεπτικών
-ΠΑΡΑΜΕΤΡΟΣ ΑΠΟΤΕΛΕΣΜΑ ΜΟΝΑΔΑ ΜΕΘΟΔΟΣ ΧΑΜΗΛΗ ΤΙΜΗ ΜΕΣΗ ΤΙΜΗ ΥΨΗΛΗ ΤΙΜΗ
-Ολικό Αζωτο (N): 0,30 % Kjeldahl
-Νιτρικό Αζωτο (NO 3-N): 10,83 mg/Kg 1N KCl
-Αμμωνιακό Αζωτο (NH4-N): mg/100g 1N KCl
-Φωσφόρος (P): 23,25 mg/Kg Olsen
-Κάλιο (K): 432,83 mg/Kg NH 4ΑοC, pH 7
-Νάτριο (Na): 28,93 mg/Kg NH 4ΑοC, pH 7
-Ασβέστιο (Ca): 8.772,22 mg/kg NH 4ΑοC, pH 7
-Μαγνήσιο (Mg): 561,39 mg/Kg NH 4ΑοC, pH 7
-Σίδηρος (Fe): 9,84 mg/Kg DTPA
-Ψευδάργυρος (Zn): 0,79 mg/Kg DTPA
-Μαγγανιο (Mn): 3,84 mg/Kg DTPA
-Χαλκός (Cu): 1,71 mg/Kg DTPA
-Βόριο (B): 1,02 mg/Kg Αζομεθίνη
-Θείο (S): mg/Kg
-Β. ΕΙΔΙΚΕΣ ΑΝΑΛΥΣΕΙΣ ΕΔΑΦΟΥΣ
-ΠΑΡΑΜΕΤΡΟΣ ΑΠΟΤΕΛΕΣΜΑ ΜΟΝΑΔΑ ΜΕΘΟΔΟΣ ΧΑΜΗΛΗ ΤΙΜΗ ΜΕΣΗ ΤΙΜΗ ΥΨΗΛΗ ΤΙΜΗ
-C.E.C. (Ικανότητα Ανταλλαγής Κατιόντων) 49,67 cmolc/Kg Υπολογιστικά
-Σχέση C/N 7,44
-Βαθμός Αλκαλίωσης (E.S.P.) 0,25 %
-Λόγος Απορρόφησης Νατρίου (S.A.R.) 0,03
-Δείκτης Χλωρωτικής Ικανότητας
-Ανάγκες σε Ασβέστιο
-Ανάγκες σε Γύψο
-Νηματώδεις -
-Η υπεύθυνη του Εργαστηρίου
-Ευαγγελία Λιόδη
-Γεωπόνος
-AgroEco 240436 Ζαννιάς 1Συμπληρωματικά Στοιχεία Δοκιμών
-Α. ΤΡΙΓΩΝΟ ΜΗΧΑΝΙΚΗΣ ΣΥΣΤΑΣΗΣ ΤΟΥ ΕΔΑΦΟΥΣ
-Β. ΣΧΕΣΗ pH ΚΑΙ ΔΙΑΘΕΣΙΜΟΤΗΤΑΣ ΘΡΕΠΤΙΚΩΝ ΣΤΟΙΧΕΙΩΝ ΣΤΟ ΕΔΑΦΟΣ
-Η διαθεσιμότητα του Φωσφόρου και
-των Μικροστοιχείων (Fe, Mn, B, Cu,
-Zn) είναι χαμηλή
-Γ. ΑΝΑΛΟΓΙΕΣ ΘΡΕΠΤΙΚΩΝ ΣΤΟΙΧΕΙΩΝ
-Σχέση Αποτέλεσμα Ιδανική Τιμή Σχόλια
-Πολύ χαμηλός λόγος Ca/Mg. Ένα μεγάλο μέρος του συμπλέγματος ανταλλαγής καταλαμβάνεται από
-Ca/Mg 9,35 10-40 ιόντα Mg, το χώμα γίνεται λιγότερο διαπερατό, βλάπτοντας την ανάπτυξη της καλλιέργειας.
-Ca/K 39,42 5 - 20
-Ca/(Mg+K) 7,56
-Ca/B 8618,95 1:100-8000 Προσθέστε Ασβέστιο
-K/Na 8,82 1-4
-K/Mg 0,24 0,2-0,35 Κανονική τιμή
-K/P 18,62 2-3
-P/N 2,15 1-2
-P/Zn 29,25 4-10
-Fe/Mn 2,56 1-2
-B/N 0,09 1:10-20 Κανονική τιμή
-B/P 0,04 1:25-50 Προσθέστε Φώσφορο
-B/K 0,00 1:75-100 Προσθέστε Βόριο
-B/Cu 0,60 1:4-5 Προσθέστε Χαλκό
-AgroEco 240436 Ζαννιάς 2Γ. ΑΞΙΟΛΟΓΗΣΗ ΑΝΑΛΥΣΗΣ & ΠΡΟΤΑΣΗ ΛΙΠΑΝΣΗΣ
-Έδαφος βαρύ, πιθανόν να δημιουργήσει προβλήματα στράγγισης και μη ικανοποιητικής ανάπτυξης των ριζών.
-Μηχανική Ηκατεργασίατουεδάφους(όργωμα)ναείναιηελάχιστηδυνατήκαιναγίνεταιόταντοέδαφοςέχειτηνκατάλληληυγρασία(ναβρίσκεταιστορώγοτου)γιαναεπιτευχθείβελτίωση
-Σύσταση: του αερισμού και της αποστράγγισης. Προτείνεται η χρήση Ρίπερ (εδαφοσχίστη). Μπορεί να βελτιωθεί με την επιφανειακή προσθήκη ποταμίσιας άμμου ή περλίτη
-Το pH είναι κατάλληλο για την καλλιέργεια Βαμβακιού
-ΤοpHείναιυψηλόκαιπιθανόνναδημιουργήσειπροβλήματατροφοπενιώνμικροθρεπτικών(ιδιαίτερατουσιδήρου)καιφωσφόρου.ΤοΆζωτοείναισκόπιμοναεφαρμόζεταισεόξινη
-pH : μορφή. Προληπτικά είναι χρήσιμη η εφαρμογή διαφυλλικών ψεκασμών που να περιέχουν ιχνοστοιχεία (ιδιάιτερα Fe και Zn) και φωσφορο.
-Ηλεκτρική Πολύ χαμηλή
-Αγωγιμότητα: αλατότητα Πιθανή εμφάνιση τροφοπενιών. Φτωχό έδαφος με μικρή μικροβιακή δραστηριότητα
-Πιθανή δημιουργία σκληρού στρώματος στο υπέδαφος. Μικρή διαθεσιμότητα P και Ιχνοστοιχείων. Μικρή ικανότητα συγκράτησης της υγρασίας
-Ολικό CaCO 3: Ασβεστούχο
-Χλωρωτική δράση. Πιθανή χλωρωση στα ευαίσθητα φυτά
-Ενεργό CaCO 3: Υψηλή τιμή -
-Συνιστάταιηπροσθήκη μεελαφράενσωμάτωσηκαλάχωνεμένηςκοπριάς ήοργανικήςουσίαςτουεμπορίου,το Κοπρία Οργανική Ουσία του Εμπορίου
-χειμώνα ή τουλάχιστον ένα μήνα πριν από τη σπορά ή τη φύτευση. Εναλλακτικά προτείνεται η καλλιέργεια φυτών (Kg/Στρ.) (kg/Στρ.)
-Οργανική κάλυψηςτοχειμώνα(ψυχανθών).Ναελαττώνεταιηδόσητουαζώτουκατά1,5-2μονάδεςγιακάθετόνο
-ουσία: Μέση κοπριάς που προστίθεται. 700 160
-Υδραυλικά
-Στοιχεία - -
+Karditsa 2024
+The results report may not be reproduced in part without the approval of the laboratory
+The results of the analyzes correspond to the samples analyzed on this dateSample Code 240436
+Sampling Depth (cm) 0-30 Analysis Period 4/26/2024 to 5/3/2024
+A. BASIC SOIL ANALYZES
+Hydraulic Elements
+Soil Moisture: 7.14 %
+Apparent Specific Gravity: 1.16 g/cm3 Specific Gravity: g/cm3 Porosity:
+Percentage of Water Saturation (SP): 65.57 % Water Capacity (FC): 36.06 %
+Permanent Withering Point (PWP): 16.39 % Available Water: 19.67 %
+Water content: %
+Mechanical Recommendation
+PARAMETER RESULT UNIT METHOD EVALUATION
+Sand: 5.29 %
+Silt: 20.78 %
+Clay: 73.92% Bouyoucos Clay C CLAY Heavy Soil
+Physicochemical Properties
+PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
+pH : 7.78 Satiety Paste
+Elect. Conductivity: 304.00 µS/cm Saturated Water
+Total CaCO 3: 17.30 % wt. Volumetrically
+Active CaCO 3: 5.18 % wt. C 2 O 4 (NH 4 ) 2
+Organic matter: 4.53 % Liquid oxidation
+Available nutrient forms
+PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
+Total Nitrogen (N): 0.30 % Kjeldahl
+Nitrate Nitrogen (NO 3-N): 10.83 mg/Kg 1N KCl
+Ammonium Nitrogen (NH4-N): mg/100g 1N KCl
+Phosphorus (P): 23.25 mg/Kg Olsen
+Potassium (K): 432.83 mg/Kg NH 4AoC, pH 7
+Sodium (Na): 28.93 mg/Kg NH 4AoC, pH 7
+Calcium (Ca): 8,772.22 mg/kg NH 4AoC, pH 7
+Magnesium (Mg): 561.39 mg/Kg NH 4AoC, pH 7
+Iron (Fe): 9.84 mg/Kg DTPA
+Zinc (Zn): 0.79 mg/Kg DTPA
+Manganese (Mn): 3.84 mg/Kg DTPA
+Copper (Cu): 1.71 mg/Kg DTPA
+Boron (B): 1.02 mg/Kg Azomethine
+Sulfur (S): mg/Kg
+B. SPECIAL SOIL ANALYSIS
+PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
+C.E.C. (Cation Exchange Capacity) 49.67 cmolc/Kg Calc
+C/N ratio 7.44
+Alkalinity Degree (E.S.P.) 0.25 %
+Sodium Absorption Ratio (S.A.R.) 0.03
+Chlorinating Capacity Index
+Calcium needs
+Needs in Gypsum
+Nematodes -
+The head of the Laboratory
+Evangelia Liodis
+Agriculturalist
+AgroEco 240436 Zannias 1 Additional Test Data
+A. TRIANGLE OF MECHANICAL COMPOSITION OF THE SOIL
+B. RELATIONSHIP OF pH AND AVAILABILITY OF SOIL NUTRIENTS
+The availability of Phosphorus and
+of Micronutrients (Fe, Mn, B, Cu,
+Zn) is low
+C. RATIOS OF NUTRIENT ELEMENTS
+Relationship Result Ideal Price Comments
+Very low Ca/Mg ratio. A large part of the exchange complex is occupied by
+Ca/Mg 9.35 10-40 Mg ions, the soil becomes less permeable, harming crop growth.
+Ca/K 39.42 5 - 20
+Ca/(Mg+K) 7.56
+Ca/B 8618.95 1:100-8000 Add Calcium
+K/Na 8.82 1-4
+K/Mg 0.24 0.2-0.35 Normal value
+K/P 18.62 2-3
+P/N 2.15 1-2
+P/Zn 29.25 4-10
+Fe/Mn 2.56 1-2
+B/W 0.09 1:10-20 Normal value
+B/P 0.04 1:25-50 Add Phosphorus
+B/K 0.00 1:75-100 Add Boron
+B/Cu 0.60 1:4-5 Add Copper
+AgroEco 240436 Zannias 2C. ANALYSIS EVALUATION & LUBRICATION RECOMMENDATION
+Heavy soil, likely to create drainage problems and unsatisfactory root development.
+Engineering The cultivation of the soil (ploughing) should be the minimum possible and is done when the soil has the appropriate moisture (is in the plow) to achieve improvement
+Recommendation: ventilation and drainage. The use of a Ripper is recommended. It can be improved by surface addition of river sand or perlite
+The pH is appropriate for the cultivation of Cotton
+The pH is high and is likely to create problems of micronutrient (especially iron) and phosphorus deficiencies. Nitrogen should be applied in acidic
+pH : form. Preventatively, the application of foliar sprays containing trace elements (especially Fe and Zn) and phosphorus is useful.
+Electric Very low
+Conductivity: salinity Possible occurrence of nutrient deficiencies. Poor soil with little microbial activity
+Possible creation of a hard layer in the subsoil. Low availability of P and Trace Elements. Low moisture retention capacity
+Total CaCO 3: Calcareous
+Chlorinating action. Possible chlorosis in sensitive plants
+Active CaCO 3: High value -
+It is recommended to add with a light incorporation of well-digested manure or organic matter of the trade, the Manure Organic Matter of the Trade
+winter or at least one month before sowing or planting. Alternatively, it is recommended to grow plants (Kg/Str.) (kg/Str.)
+Organic cover in the winter (sweet flowers). The nitrogen dose is reduced by 1.5-2 units per year
+substance: Manure medium added. 700 160
+Plumbing
+Details - -
 C.E.C.
-(Ικανότητα Ανταλλαγής Κατιόντων): Γόνιμο έδαφος με πολύ καλή διάθεση θρεπτικών, το pH του εδάφους αλλάζει δύσκολα
-Σχέση C/N: Αργή αποικοδόμηση. Αφαιρείται άζωτο από το έδαφος.Δε μένουν διαθέσιμα ποσά αζώτου για τα φυτά. Προτείνεται αζωτούχος λίπανση.
-Συνιστώμενη λίπανση Συνιστώμενο λίπασμα
-Δόση (μονάδες) Τρόπος εφαρμογής λιπασμάτων Είδος Λιπάσματος Δόση
-Άζωτο (Ν) Χαμηλή Περιεκτικότητα - Υπολειμματικό Άζωτο: 2,5 Kg/Στρέμμα Προτεινόμενη δόση Αζώτου: 6,00 μονάδες
-Βασική Εφαρμογή με ενσωμάτωση κατά το στάδιο της προετοιμασίας του αγρού για σπορά Άζωτο από οργανικά
-Λίπανση: υπολείμματα
+(Cation Exchange Capacity): Fertile soil with very good availability of nutrients, soil pH is difficult to change
+C/N ratio: Slow degradation. Nitrogen is removed from the soil. Nitrogen amounts are not available for plants. Nitrogen fertilization is recommended.
+Recommended Fertilizer Recommended fertilizer
+Dose (units) Fertilizer application method Fertilizer type Dose
+Nitrogen (N) Low Content - Residual Nitrogen: 2.5 Kg/Ha Recommended dose of Nitrogen: 6.00 units
+Basic Application with incorporation during the field preparation stage for sowing Nitrogen from organics
+Lubrication: residues
 -
 -
 -
-Φώσφορος Επαρκής προς υψηλή περιεκτικότητα - Υπολειμματικός Φώσφορος: 8,1 Kg/Στρέμμα Προτεινόμενη δόση Φωσφόρου: 4,00 μονάδες
+Phosphorus Adequate to high content - Residual Phosphorus: 8.1 Kg/Ha Recommended dose of Phosphorus: 4.00 units
 (P)
-ως P 2O 5 4μον. Βασική Εφαρμογή με ενσωμάτωση Φωσφορίτης 20,0 Kg/στρ
-Λίπανση: (1-20-0)
+as P 2O 5 4mon. Basic Application with incorporation of Phosphorite 20.0 Kg/str
+Lubrication: (1-20-0)
 -
-Κάλιο (K) Υψηλή Περιεκτικότητα. Να μη γίνει εφαρμογή καλίου για 2-3χρόνια. - Υπολειμματικό Κάλιο: 150,2 Kg/Στρέμμα. Ποσοστό της CEC= Προτεινόμενη δόση Καλίου: 0,00 μονάδες
-ως KO 2,23%
+Potassium (K) High Content. Do not apply potassium for 2-3 years. - Residual Potassium: 150.2 Kg/Acre. Percentage of CEC= Recommended Potassium dose: 0.00 units
+to KO 2.23%
 2
 - -
-- Διαφυλλική Προτείνονται δύο διαφυλλικές εφαρμογές στην περίοδο σχηματισμού και ανάπτυξης των ινών με Νιτρικό Κάλιο
-Λίπανση: διάλλυμα συγκέντρωσης 0,5% (13-0-46)
-Μαγνήσιο Υψηλή Περιεκτικότητα επαρκής για 3-4 χρόνια. Μπορεί να προκαλέσει έλλειψη Καλίου - Ποσοστό της CEC με Mg= 9,41 %
+- Foliar Two foliar applications are recommended during the period of fiber formation and growth with Potassium Nitrate
+Fertilization: 0.5% concentration solution (13-0-46)
+Magnesium High Content sufficient for 3-4 years. May cause Potassium deficiency - Percentage of CEC with Mg= 9.41 %
 (Mg)
 - -
 -
-Ασβέστιο (Ca) Πολύ Υψηλή Περιεκτικότητα 88,09% της CEC 43,75 cmol/Kg
-Προτείνεται καταστροφή της επιφανειακώς σχηματιζόμενης κρούστας, η αύξηση της οργανικής ουσίας και η εφαρμογή στάγδην άρδευσης (ή διαφορετικά συχνή άρδευση με μικρές
-ποσότητες νερού)
+Calcium (Ca) Very High Content 88.09% of CEC 43.75 cmol/Kg
+It is recommended to destroy the surface crust, increase the organic matter and apply drip irrigation (or otherwise frequent irrigation with small
+amounts of water)
 - -
 -
-Σίδηρος (Fe) Χαμηλή Περιεκτικότητα
-0,6μον. Βασική Εφαρμόζεταιστοέδαφοςστοτέλοςτουχειμώναμεενσωμάτωση.Σταβαριάεδάφηκαλόείναινα Sequestrene 138 10,9 Kg/στρ
-Λίπανση: εφαρμόζεταιλίγονωρίτερα.Ησυνιστώμενηδόσηνακατανέμεταιέτσιώστεναεπωφελείταιόλοτο (Fe-EDDHA NaFe 6%)
-ριζικό σύστημα των φυτών.
-Εφαρμογή στο φύλλωμα δεν συστήνεται παρά μόνο σε εξαιρετικές περιπτώσεις -
-Ψευδάργυρος Πολύ Χαμηλή Περιεκτικότητα
-(Zn) Ψεκασμός 1-2 φορές την περίοδο της ανάπτυξής τους με διάλυμα περιεκτικότητας 0,05 - 0,5% Θειϊκός Ψευδάργυρος
-επταϋδρικός
+Iron (Fe) Low Content
+0.6units Basic Applied to the soil at the end of winter without incorporation. Heavy soils are good Sequestrene 138 10.9 Kg/turn
+Fertilization: applied a little earlier. The recommended dose should be distributed so that the entire (Fe-EDDHA NaFe 6%)
+root system of the plants is benefited.
+Application to the foliage is not recommended except in exceptional cases -
+Zinc Very Low Content
+(Zn) Spray 1-2 times during their growth period with a solution containing 0.05 - 0.5% Zinc Sulfate
+heptahydrate
 -
-Μαγγάνιο Πολύ Χαμηλή Περιεκτικότητα
-(Mn) Διαφυλλική Συνιστώνται2-3εφαρμογέςστηνκαλλιεργητικήπερίοδοσεδόση30-60γρ.στα100λίτρανερόγια Χηλικό Μαγγάνιο (Mn-EDTA)
-Λίπανση: κάθε στρέμμα.
+Manganese Very Low Content
+(Mn) Foliar 2-3 applications are recommended during the growing period at a dose of 30-60g per 100 liters of water for Manganese Chelate (Mn-EDTA)
+Fertilization: per acre.
 - -
-Χαλκός (Cu) Υψηλή Περιεκτικότητα. Πιθανή έλλειψη Σιδήρου. Δεν προτείνεται λίπανση
+Copper (Cu) High Content. Possible Iron deficiency. Fertilization is not recommended
 - -
-Βόριο (B) Επαρκής Περιεκτικότητα
+Boron (B) Sufficient Content
 - -
 - -
-AgroEco 240436 Ζαννιάς 3Δ. ΠΑΡΑΤΗΡΗΣΕΙΣ & ΣΧΟΛΙΑ
-Προτείνεται να μην εγκαθίστανται φυτά που απαιτούν όξινο έδαφος π.χ. Βατόμουρα, Μύρτιλλο κλπ
-Προτείνεται να μην εγκαθίστανται φυτά που δεν ευνοούνται από το υψηλό Ανθρακικό Ασβέστιο (CaCO3)
-Μετά από περιόδους στρεσαρίσματος των φυτών λόγω χαμηλών θερμοκρασιών, ξηρασίας, χαλαζιού κλπ. Προτείνεται η χρήση βιοδιεγέρτη στο στάδιο
-του σχηματισμού των χτενιών και κατά την άνθιση. Δοσολογία 0,3L το στρέμμα με ποσότητα ψεκαστικού διαλύματος μεγαλύτερη των 20 L το Στρέμμα
-ΑΠΑΙΤΗΣΕΙΣ ΤΗΣ ΚΑΛΛΙΕΡΓΕΙΑΣ ΣΕ ΕΔΑΦΟΣ & ΚΛΙΜΑ
-Τοβαμβάκιείναιφυτόμεμεγάληπροσαρμοστικότητακαιμπορείνακαλλιεργηθείσεευρείαποικιλίαεδαφών.Υψηλέςαποδόσειςεπιτυγχάνονταισε
-μέσης μηχανικής σύστασης, βαθιά γόνιμα εδάφη με επαρκήστράγγιση με καλή υδατοικανότητα και με οργανική ουσία < 3,0%. Στα ελαφρά εδάφη
-απαιτεί αυξημένες ποσότητες λιπασμάτων ενώ τα βαριά εδάφη που νεροκρατούν, προκαλούν ασφυξία και ασθένειες στο ριζικό σύστημα και είναι
-ακατάλληλαγιατηνκαλλιέργεια.Παρουσιάζεικαλήανεκτικότηταστηναλατότητατουεδάφους.Ωςπροςτηνοξύτητα,αναπτύσσεταισεμεγάλοεύροςpH
-από5,5έως8,0,μειδανικόαπό6,8-7,3.Είναιφυτόθερμώνκλιμάτων,μειδιαίτερεςαπαιτήσειςσευψηλέςθερμοκρασίεςτηνπερίοδοτηςανάπτυξηςκαι
-τηςκαρποφορίας.Κατάτησπορά,ηελάχιστηθερμοκρασίαεδάφουςγιαικανοποιητικόφύτρωμαστοχωράφιείναιοι13°C,ενώηάριστηθερμοκρασία
-περιβάλλοντος για ταχεία ανάπτυξη και υψηλές αποδόσεις είναι οι 32°C - 34°C
-ΒΑΣΙΚΕΣ ΑΡΧΕΣ ΛΙΠΑΝΣΗΣ
-Βασικήλίπανση(στησπορά):Επιδιώκεταινακαλυφθούνοιανάγκεςσεθρεπτικάστοιχείαπουείναιαπαραίτηταγιατηνκαλήεγκατάστασητωνφυτών,τη
-δημιουργίαπλούσιουριζικούσυστήματοςκαιτηπρώιμηκαιεύρωστηανάπτυξητηςβλάστησης.Στηβασικήλίπανσηχορηγείταιολόκληρηηποσότητα
-τουΦωσφόρου(ηέλλειψηφωσφόρουσταπρώταστάδιατηςκαλλιέργειαςδεδιορθώνεταιστησυνέχεια),ολόκληρηηποσότητατουΚαλίουκαιμέχριτο
-50% της ποσότητας του Αζώτου (συνιστάται η χρήση λιπασμάτων Αμμωνιακής μορφής, βραδείας απελευθέρωσης).
-Επιφανειακήλίπανση(πρινταχτένια):Ηεπιφανειακήλίπανσηεπιδιώκεταινακαλυφθούνοιανάγκεςσεθρεπτικάστοιχείαπουείναιαπαραίτηταγιατην
-ανάπτυξητηςκαλοκαιρινήςβλάστησης,τηςανθοφορίαςκαιτηςκαρπόδεσης,καθώςκαιτηςανάπτυξηςτωνκαρυδιών.Συνιστάταιναεφαρμόζεταιαπό
-τηνέναρξηεμφάνισηςτωνγραμμώνμέχριτηνέναρξητηςανθοφορίαςσεμιαδόση(μεσταθεροποιημένεςμορφέςΑμμωνιακούΑζώτου)ήπερισσότερες
-δόσεις (μέσω της υδρολίπανσης με Νιτρικές μορφές Αζώτου). Χορηγείται η υπόλοιπη ποσότητα του Αζώτου (50%).
-ΑΡΔΕΥΣΕΙΣ
-Σύμφωνα με τα δεδομένα της ανάλυσης, το έδαφος στα 0-30 εκατοστά ζυγίζει 346,88 τόνους
-Η μέγιστη ποσότητα νερού που μπορεί να συγκρατήσει το έδαφος είναι: 125,09 κ.μ. το στρέμμα
-Το ενεργό βάθος ριζοστρώματος της καλλιέργειας όπου αναπτύσσεται η κύρια μάζα των ριζών των φυτών και συντελείται ο κύριος
-εφοδιασμός των ριζών με νερό είναι: 65 - 130 εκ.
-Οι συνολικές απαιτήσεις του βαμβακιού σε νερό είναι κατά μέσο όρο γύρω στα 700κμ το στρέμμα το έτος. Από το φύτρωμα μέχρι την εμφάνιση χτενιών
-Προτεινόμενη μέθδος άρδευσης: ΣΤΑΓΔΗΝ
-ΚΑΤΕΡΓΑΣΙΑ ΤΟΥ ΕΔΑΦΟΥΣ
-Η μηχανική κατεργασία του εδάφους πρέπει να γίνεται όταν η υγρασία του κυμαίνεται στο 50-60% της υδατοχωρητικότητας του.
-ΟΔΗΓΙΕΣ ΕΦΑΡΜΟΓΗΣ ΛΙΠΑΝΣΗΣ
-- Η εφαρμογή της βασικής λίπανσης, στην περίοδο του χειμώνα, να μην γίνεται σε περιόδους παγετού.
-- Η εφαρμογή της επιφανειακής λίπανσης, το καλοκαίρι να μη γίνεται σε ώρες ζέστης.
-- Για τη σωστή εφαρμογή της υδρολίπανσης το λίπασμα διοχετεύτεται στο μεσαίο τρίτο "set" της άδρευσης (Αν έχετε προγραμματίσει άρδευση 12 ωρών
-ανοίγετε την υδολίπανση από την 4η έως την 8η ώρα)
-- Oiδιαφυλλικοίψεκασμοίμειχνοστοιχείαμπορούννασυνδυασθούνμεαραιόδιάλυμαουρίας(0,2-0,3%)γιακαλύτερηδιείσδυσηστοεσωτερικότων
-φύλλωνκαθώςκαιμεεξουδετέρωσητηςελεύθερηςοξύτηταςτουδιαλύματοςμευδράσβεστο.Στηνπερίπτωσηπουπαρασκευάζετεμόνοισαςμίγματα
-μικροθρεπτικών, χρησιμοποιείστε μόνο χηλικές μορφές και όχι Θειϊκές μορφές. Τα διαλύματα θα πρέπει να προετοιμάζονται αμέσως πριν την
-εφαρμογή. Προτείνεται πριν από κάθε χρήση να γίνεται δοκιμή συνδυαστικότητας.
-- Για την εφαρμογή διαφυλλικών λιπασμάτων:
-- Να μην γίνεται σε ώρες ζέστης και το ψεκαστικό διάλυμα θα πρέπει να λούζει το φύλλο και από τις δύο πλευρές.
-- Ψεκάστε σε ψυχρές και υγρές περιόδους του εικοσιτετραώρου (τη νύχτα ή νωρίς το πρωί).
-- Ποτέ μην ψεκάζετε στρεσαρισμένα φυτά.
-- Μην ψεκάζετε όταν τα δέντρα ή η καλλιέργεια είναι σε κακουχία ή μια γενικότερη αδυναμία.
-- Ιδιαίτερη προσοχή πρέπει να δίνεται ώστε το pH του ψεκαστικού υγρού να κυμαίνεται μεταξύ 5,5 και 6,5`
-- Η εφαρμογή πρέπει να γίνεται ομοιόμορφα, καλύπτοντας το φύλλωμα κατά το δυνατό και από τις δύο πλευρές
-- Ηαποτελεσματικότητατηςλίπανσηςσυνήθωςαυξάνεταιότανηχορήγησητουλιπάσματοςγίνεταισεπολλέςμικρέςδόσεις,μετημέγιστηποσότητανα
-χορηγείταιτηνπερίοδοπουπαρατηρείταιμέγιστηανάγκητηςκαλλιέργειας.Στηνκατεύθυνσηαυτήμπορείνασυμβάλλεικαιηάρδευσημεσυχνέςκαι
-μικρές δόσεις.
-Τα λιπάσματα που προτείνονται αφορούν σε βασικούς τύπους που κυκλοφορούν στην αγορά και όχι σε προϊόντα συγκεκριμένων εταιρειών.
-Η παρούσα συμβουλευτική λίπανση αγροτεμαχίου προκύπτει με βάση τα εργαστηριακά αποτελέσματα του δείγματος που προσκομίστηκε και
-αναφέρονταιστοπαρόνπιστοποιητικόκαιείναιενδεικτικήγιατηναναφερόμενηγενικήκαλλιέργεια.Ενδέχεταινααπαιτούνταιπροσαρμογέςλόγωτων
-παραμέτρωντηςηλικίας,τηςκαλλιέργειας,τουτρόπουεγκατάστασης,τωνκλιματολογικώνσυνθηκώνήάλλωνιδιαίτερωνπαραμέτρωνπουμπορείνα
-αφορούν το συγκεκριμένο αγροτεμάχιο.
-Συστήνεται επανέλεγχος του εδάφους σε τρία χρόνια
-AgroEco 240436 Ζαννιάς 4
+AgroEco 240436 Zannias 3D. OBSERVATIONS & COMMENTS
+It is recommended not to install plants that require acidic soil e.g. Blackberries, Blueberries etc.
+It is recommended not to install plants that are not favored by high Calcium Carbonate (CaCO3)
+After periods of plant stress due to low temperatures, drought, hail etc. It is recommended to use a biostimulant at the stage
+of comb formation and during flowering. Dosage 0.3L per hectare with a spray solution quantity greater than 20 L per Acre
+REQUIREMENTS OF CULTIVATION IN SOIL & CLIMATE
+Cotton is a plant with great adaptability and can be grown in a wide variety of soils. High yields are achieved in
+medium mechanical texture, deep fertile soils with adequate drainage with good water content and organic matter < 3.0%. On light soils
+requires increased amounts of fertilizers while heavy soils that are waterlogged cause suffocation and diseases in the root system and are
+unsuitable for cultivation. Shows good tolerance to soil salinity. As for acidity, it grows in a wide pH range
+from 5.5 to 8.0, medium from 6.8-7.3. It is a plant of warm climates, with special requirements in high temperatures during the growth period and
+after sowing, the minimum soil temperature for satisfactory germination is 13°C, while the optimum temperature
+environment for rapid growth and high yields is 32°C - 34°C
+BASIC PRINCIPLES OF LUBRICATION
+Basic fertilization (in the seed): Seeks to meet the needs in nutrients that are necessary for the good establishment of the plants, the
+creation of a rich root system and the early and robust growth of the vegetation.
+of Phosphorus (the lack of Phosphorus in the first stages of cultivation is not corrected later), the entire amount of Potassium and up to
+50% of the amount of Nitrogen (it is recommended to use ammonium fertilizers, slow release).
+Surface fertilization (combs): The surface fertilization seeks to meet the needs of nutrients that are necessary for
+development of summer vegetation, flowering and fruiting, as well as nut development. It is recommended to be applied by
+the beginning of the appearance of the lines until the beginning of flowering in a dose (stabilized forms of Ammonia Nitrogen) or more
+doses (through hydrofertilization with Nitrate forms of Nitrogen). The remaining amount of Nitrogen (50%) is administered.
+IRRIGATION
+According to the analysis data, the soil at 0-30 cm weighs 346.88 tons
+The maximum amount of water that can hold the ground is: 125.09 sq.m. the acre
+The active root layer depth of the crop where the main mass of plant roots develop and the main is formed
+supplying the roots with water is: 65 - 130 cm.
+The total water requirements of cotton average around 700 km per hectare per year. From germination to the appearance of combs
+Recommended irrigation method: STAGDIN
+TREATMENT OF THE SOIL
+The mechanical treatment of the soil must be done when its moisture is at 50-60% of its water capacity.
+LUBRICATION APPLICATION INSTRUCTIONS
+- The application of the basic fertilization, in the winter period, should not be done in periods of frost.
+- The application of surface lubrication, in the summer, should not be done during hot hours.
+- For the correct application of hydrofertilization, the fertilizer is channeled into the middle third "set" of the irrigation system (If you have scheduled 12-hour irrigation
+turn on irrigation from 4 to 8 o'clock)
+- The foliar sprays of trace elements can be combined with a dilute solution of urea (0.2-0.3%) for better penetration into the interior
+leaves as well as neutralizing the free acidity of the solution with lime water. In case you prepare mixtures yourself
+micronutrients, use only chelated forms and not sulfated forms. Solutions should be prepared immediately before
+application. It is recommended to perform a compatibility test before each use.
+- For the application of foliar fertilizers:
+- Do not do it in hot weather and the spray solution should wash the leaf from both sides.
+- Spray in cold and wet periods of the twenty-four hours (at night or early morning).
+- Never spray stressed plants.
+- Do not spray when the trees or crop is in distress or a general weakness.
+- Particular care must be taken so that the pH of the spray liquid varies between 5.5 and 6.5
+- Application should be done evenly, covering the foliage as much as possible on both sides
+- The effectiveness of fertilization is usually increased when the fertilizer is administered in several small doses, with the maximum amount of
+is granted in the period when the maximum need for cultivation is observed. In this direction, frequent irrigation and
+small doses.
+The fertilizers proposed are for basic types on the market and not for products of specific companies.
+The present advisory fertilization of a plot of land is based on the laboratory results of the sample provided and
+referred to in this certificate and is indicative of the general culture referred to. Adjustments may be required due to
+parameters of age, cultivation, method of installation, climatic conditions or other parameters that may
+concern the specific plot of land.
+Re-testing of the soil in three years is recommended
+AgroEco 240436 Zannias 4

@@ -1,75 +1,58 @@
-import torch
-from transformers import LlamaForCausalLM, LlamaTokenizer,PreTrainedTokenizerFast
-import PyPDF2
-from accelerate import init_empty_weights, load_checkpoint_and_dispatch
-import os
-
-# Load LLaMA model and tokenizer (adjust paths as necessary)
-model_path = "C:\\Users\\vagga\\Desktop\\Μαθήματα\\Μαθήματα\\Μαθήματα - TUC\\Διπλωματική\\Llama-3.1-8B-Instruct"
-
-offload_folder = "offload"
-os.makedirs(offload_folder, exist_ok=True)
-
-
-tokenizer = PreTrainedTokenizerFast.from_pretrained(model_path)
-# Load the model and dispatch with safetensors support if applicable
-try:
-    model = LlamaForCausalLM.from_pretrained(model_path, use_safetensors=True)
-except Exception as e:
-    print(f"Error loading with safetensors: {e}")
-    # Fallback to regular loading
-    model = LlamaForCausalLM.from_pretrained(model_path)
-
-# Automatically distribute the model across CPU and GPU
-model = load_checkpoint_and_dispatch(model, model_path, device_map="auto", offload_folder=offload_folder)
+from langchain.prompts import ChatPromptTemplate
+from llama_index.core import SimpleDirectoryReader
+from llama_index.core import Document
+from llama_index.core import VectorStoreIndex, DocumentSummaryIndex
+from llama_index.core.node_parser import SentenceSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_ollama import OllamaLLM
+from llama_index.core import Settings
+from langchain.llms import BaseLLM
+import pytesseract
+from pdf2image import convert_from_path
+from PyPDF2 import PdfReader
+from sentence_transformers import SentenceTransformer
+from langchain_ollama import OllamaEmbeddings
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
-# Check if CUDA is available and move the model to GPU if it is
-# device = "cuda" if torch.cuda.is_available() else "cpu"
-# model.to(device)
+# The line BaseLLM.predict = patched_predict overrides the deprecated predict method and uses invoke instead.
+# This should ensure that anywhere the predict method is called within llama_index, it uses invoke
+def patched_predict(self, prompt, **kwargs):
+    return self.invoke(prompt, **kwargs)
 
-# Function to extract text from a PDF file
-def extract_text_from_pdf(pdf_path):
-    with open(pdf_path, 'rb') as file:
-        reader = PyPDF2.PdfReader(file)
-        text = ""
-        for page_num in range(len(reader.pages)):
-            page = reader.pages[page_num]
-            text += page.extract_text()
-    return text
+## main
+BaseLLM.predict = patched_predict
 
-# Function to generate query response using LLaMA
-def query_pdf(pdf_text, query, max_length=500):
-    # Prepare input prompt for the model
-    input_text = f"Document: {pdf_text}\n\nQuery: {query}\n\nAnswer:"
-    inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=2048)
+# load the LLM that we are going to use
+llm = OllamaLLM(model="llama3.1:70b", temperature = 0.1)
 
-    # Move the inputs to the proper device (accelerate will handle it)
-    inputs = {key: value.to(model.device) for key, value in inputs.items()}
 
-    # Generate response using LLaMA model
-    output = model.generate(
-        inputs.input_ids,
-        max_length=max_length,
-        num_return_sequences=1,
-        no_repeat_ngram_size=2,
-        early_stopping=True
-    )
+template_string = """
+You are provided with a document that contains a soil analysis. Domument: {doc}
 
-    # Decode and return the generated answer
-    answer = tokenizer.decode(output[0], skip_special_tokens=True)
-    return answer
+Extract the following information:
 
-# Example usage
-pdf_path = "Resources//TEST_PDF.pdf"
-query = "What is the shipping policy mentioned in the document?"
+1. Full name
+2. Type of cultivation 
+3. Place
+4. Μechanical soil structure (Μηχανική Σύσταση in greek): List elements (Άμμος (Sand), Ιλύς (Silt), Άργιλος (Clay)) in the basic soil analysis along with its measured value and unit. 
+5. Physicochemical properties (Φυσικοχημικές Ιδιότητες): List each element (pH, Ηλεκτ. Αγωγιμότητα, Οργανική Ουσία), including its measured value and unit in the format: Element: Value (Unit).
+6. Available nutritional forms (Διαθέσιμες μορφές Θρεπτικών): Identify and list each available nutritional form, along with its value and unit in the format: Element: Value (Unit). 
+7. Evaluation (Αξιολόγηση), from the basic soil analysis, extract the Evaluation of the soil. This should be one word ("Αργιλώδες" or "Αμμώδες" or "Ασβεστώδες" or "Ιλυώδες" or "Πηλώδες" or something else).
 
-# Extract text from the PDF
-pdf_text = extract_text_from_pdf(pdf_path)
 
-# Perform query on the PDF
-response = query_pdf(pdf_text, query)
+Instructions:
+You must not create an intro or outro, just give the above info ONLY.
+Do not provide any additional text, just list the 7 nodes described above.
 
-# Print the result
-print("Query Response:")
+"""
+
+
+with open("RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt") as file:
+    document_text = file.read()
+
+prompt_template = ChatPromptTemplate.from_template(template_string)
+llm_input = prompt_template.format_messages(doc = document_text)
+
+response = llm.invoke(llm_input)
 print(response)

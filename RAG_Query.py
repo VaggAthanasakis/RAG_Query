@@ -3,7 +3,6 @@ from llama_index.core import Document
 from llama_index.core import VectorStoreIndex, DocumentSummaryIndex
 from llama_index.core.node_parser import SentenceSplitter
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.llms import Ollama
 from langchain_ollama import OllamaLLM
 from llama_index.core import Settings
 from langchain.llms import BaseLLM
@@ -17,12 +16,11 @@ import pathlib
 import pymupdf4llm
 import pdfplumber
 import ocrmypdf
+from deep_translator import GoogleTranslator
+from langdetect import detect
 #import fitz
 #from pdfminer.high_level import extract_text
 #from tika import parser
-
-
-
 
 
 
@@ -67,11 +65,41 @@ def load_prompt(filename):
         return file.read()
 
 
+# function to split text into segments of max_length length
+def split_text(text, max_length=2000):
+    segments = []
+    while len(text) > max_length:
+        # Find the last space within the 5000 character limit to avoid splitting words
+        split_index = text[:max_length].rfind(' ')
+        segments.append(text[:split_index])
+        text = text[split_index + 1:]
+    segments.append(text)  # Add any remaining text as the last segment
+    return segments
+
+# Function that translates each chunk from greek to english
+def translate_text_in_chunks(text, source_lang='auto', target_lang='en'):
+    segments = split_text(text)
+    translated_segments = []
+
+    for segment in segments:
+        translated_text = GoogleTranslator(source=source_lang, target=target_lang).translate(segment)
+        translated_segments.append(translated_text)
+
+    # Join all translated segments into a single text
+    return ' '.join(translated_segments)
+
+
+# function to translate the input of the LLM in English In order to achieve betterc accuracy
+def text_translator(greek_text):
+    translated_text = translate_text_in_chunks(greek_text)
+   
+    return translated_text
+
 ## main
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("RAG_Query/Resources/SOIL_ANALYSIS.pdf") 
+input_file_path = ("RAG_Query/Resources/Soil_Analysis_Resources/SOIL_ANALYSIS.pdf") 
 response_file = ("RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
 text_output_file = ("RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
 
@@ -89,8 +117,6 @@ if is_pdf_scanned(input_file_path):
     # extracted_text = extract_text_from_scanned_pdf(input_file_path)
     # with open(text_output_file, "w", encoding='utf-8') as file:
     #     file.write(str(extracted_text))
-
-    # documents = [Document(text=extracted_text)]
     
     # if the input file is scanned, convert it to native pdf
     # using ocr and then process it normally
@@ -99,14 +125,24 @@ if is_pdf_scanned(input_file_path):
     
 # If it's not scanned, load the document normally
 # Use PDFPlumber
-#text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
+# text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
 with pdfplumber.open(input_file_path) as pdf:
     full_text = ""
     for page in pdf.pages:
         full_text += page.extract_text()  # Extracts text page-by-page
-    pathlib.Path(text_output_file).write_bytes(full_text.encode())
 
-    documents = [Document(text=full_text)]
+# Check if we have to translate the text
+if (detect(full_text) != 'en'):
+    print("\nTranslating the text..")
+    full_text = text_translator(full_text)
+
+pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+documents = [Document(text=full_text)]
+    
+    # with open("RAG_Query/outputs/translated.txt", encoding='utf-8') as file:
+    #     translated_text = file.read()
+    # documents = [Document(text=translated_text)]
 
     # # Use SimpleDirectoryReader
     # documents = SimpleDirectoryReader(
@@ -166,8 +202,8 @@ llm = OllamaLLM(model="llama3.1:8b", temperature = 0.1)
 #embed_model = OllamaEmbeddings(model="llama3.1:8b")
 #embed_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 #embed_model = HuggingFaceEmbedding(model_name='all-MiniLM-L6-v2')
-#embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
-embed_model = "local:BAAI/bge-small-en-v1.5"
+embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
+#embed_model = "local:BAAI/bge-small-en-v1.5"
 
 
 
@@ -186,7 +222,7 @@ prompt = load_prompt("RAG_Query/Prompts/Soil_Analysis_prompt.txt")
 # Try the VectorStoreIndex 
 
 # Specify the splitter
-splitter = SentenceSplitter(chunk_size=1000)
+splitter = SentenceSplitter(chunk_size=700)
 # splitter = RecursiveCharacterTextSplitter(
 #     chunk_size=512,   # Size of each chunk
 #     chunk_overlap=50  # Overlap of 50 tokens between chunks
