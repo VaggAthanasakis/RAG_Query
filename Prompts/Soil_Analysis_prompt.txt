@@ -1,30 +1,16 @@
-prompt = f"""
 You are provided with a document that contains a soil analysis.
-The document is on greek.
 
 Extract the following information:
 
 1. Full name
-2. Type of cultivation
+2. Type of cultivation 
 3. Place
-4. Basic soil analysis
-5. Basic types of nutritious together with the results
-6. Μechanical soil structure
-7. Οbservations and comments
-
-Example Output:
-
-1. Full name = (Give the full name)
-2. Type of cultivation = (Give rhe type of cultivation)
-3. Place = (Give the place of the cultivation)
-4. Basic soil analysis = (Give the details of the basic soil analysis)
-5. Basic types of nutritious together with the results =  (Give nutrition types together with the resulted value)
-6. Μechanical soil structure  = (Give each parameter together with the resulted value)
-7. Οbservations and comments = (Give the details of the observations and of the comments)
+4. Μechanical soil structure (Μηχανική Σύσταση in greek): List elements (Άμμος (Sand), Ιλύς (Silt), Άργιλος (Clay)) in the basic soil analysis along with its measured value and unit. 
+5. Physicochemical properties (Φυσικοχημικές Ιδιότητες): List each element (pH, Ηλεκτ. Αγωγιμότητα, Οργανική Ουσία), including its measured value and unit in the format: Element: Value (Unit).
+6. Available nutritional forms (Διαθέσιμες μορφές Θρεπτικών): Identify and list each available nutritional form, along with its value and unit in the format: Element: Value (Unit). 
+7. Evaluation (Αξιολόγηση), from the basic soil analysis, extract the Evaluation of the soil. This should be one word ("Αργιλώδες" or "Αμμώδες" or "Ασβεστώδες" or "Ιλυώδες" or "Πηλώδες" or something else).
 
 
 Instructions:
-Your answer must be in greek.
 You must not create an intro or outro, just give the above info ONLY.
-Give the response in the same format as the above example.
-"""
+Do not provide any additional text, just list the 7 nodes described above.

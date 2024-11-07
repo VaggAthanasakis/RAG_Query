@@ -12,6 +12,7 @@ from pdf2image import convert_from_path
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 from langchain_ollama import OllamaEmbeddings
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import pathlib
 import pymupdf4llm
 import pdfplumber
@@ -70,9 +71,9 @@ def load_prompt(filename):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("RAG_Query/Resources/TEST_PDF_3.pdf") 
-response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
-text_output_file = ("RAG_Query/outputs/TEST_PDF_3_TEXT.txt")
+input_file_path = ("RAG_Query/Resources/SOIL_ANALYSIS.pdf") 
+response_file = ("RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
+text_output_file = ("RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
 
 # input_file_path = ("RAG_Query/OCR/OCR_outputs/TEST_PDF_3_OCRmyPDF_def.pdf") 
 # response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
@@ -162,7 +163,12 @@ llm = OllamaLLM(model="llama3.1:8b", temperature = 0.1)
 #embed_model = "local:BAAI/bge-small-en-v1.5"
 #embed_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 #embed_model = SentenceTransformer('all-MiniLM-L6-v2')
-embed_model = OllamaEmbeddings(model="llama3.1:8b")
+#embed_model = OllamaEmbeddings(model="llama3.1:8b")
+#embed_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+#embed_model = HuggingFaceEmbedding(model_name='all-MiniLM-L6-v2')
+#embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
+embed_model = "local:BAAI/bge-small-en-v1.5"
+
 
 
 # The Settings class in llama_index (formerly known as GPT Index) is used to configure
@@ -173,14 +179,14 @@ Settings.embed_model = embed_model
 Settings.context_window = 2048
 
 
-prompt = load_prompt("RAG_Query/Prompts/Info_extraction_prompt.txt")
+prompt = load_prompt("RAG_Query/Prompts/Soil_Analysis_prompt.txt")
 
 
 ########################################################
 # Try the VectorStoreIndex 
 
 # Specify the splitter
-splitter = SentenceSplitter(chunk_size=800)
+splitter = SentenceSplitter(chunk_size=1000)
 # splitter = RecursiveCharacterTextSplitter(
 #     chunk_size=512,   # Size of each chunk
 #     chunk_overlap=50  # Overlap of 50 tokens between chunks
