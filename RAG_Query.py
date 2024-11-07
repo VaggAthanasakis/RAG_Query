@@ -99,9 +99,9 @@ def text_translator(greek_text):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("RAG_Query/Resources/Soil_Analysis_Resources/SOIL_ANALYSIS.pdf") 
-response_file = ("RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
-text_output_file = ("RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
+input_file_path = ("/home/eathanasakis/Thesis/RAG_Query/Resources/Soil_Analysis_Resources/Soilanalysis-38-Zannias/Zanias/121/240440-kottas.pdf")
+response_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
+text_output_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
 
 # input_file_path = ("RAG_Query/OCR/OCR_outputs/TEST_PDF_3_OCRmyPDF_def.pdf") 
 # response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
@@ -215,7 +215,7 @@ Settings.embed_model = embed_model
 Settings.context_window = 2048
 
 
-prompt = load_prompt("RAG_Query/Prompts/Soil_Analysis_prompt.txt")
+prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Soil_Analysis_prompt.txt")
 
 
 ########################################################
