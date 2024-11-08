@@ -1,13 +1,13 @@
 Soil, Plant Tissue & Irrigation Water Analysis Laboratory
 ANALYSIS RESULTS REPORT
-LAST NAME: KOTTAS
-NAME: ANDREAS
+LAST NAME: ZANNIAS
+NAME: IOANNIS
 LAST NAME:
 A.F.M.:
 ADDRESS:
 LOCAL COMMUNITY/ COUNTY: ORCHOMENOS VIOTIAS
 PHONE / EMAIL:
-AGRO LOCATION: ORCH 12 / PENTAZI
+FIELD LOCATION: ORCH 8 / KEFALES
 VILLAGE / TOWN ORCHOMENOS VIOTIA
 EXTENSION (STR):
 CROP: COTTON
@@ -17,7 +17,7 @@ IRRIGATION METHOD:
 TYPE OF SAMPLES: SOIL
 SAMPLING: THE SAME
 DATE OF RECEIPT: 25/4/2024
-SAMPLE CODES: 240440
+SAMPLE CODES: 240438
 ANALYSIS TYPE: FULL
 Laboratory Contact Details:
 Address: Sarantaporou 148, 43100 Karditsa
@@ -25,97 +25,97 @@ Tel. 2441076184, Fax: 2441076188, Mobile: 6976777093
 E-mail: info@agroeco.gr Site: www.agroeco.gr
 Karditsa 2024
 The results report may not be reproduced in part without the approval of the laboratory
-The results of the analyzes correspond to the samples analyzed on this dateSample Code 240440
+The results of the analyzes correspond to the samples analyzed on this dateSample Code 240438
 Sampling Depth (cm) 0-30 Analysis Period 4/26/2024 to 5/3/2024
 A. BASIC SOIL ANALYZES
 Hydraulic Elements
-Soil Moisture: 2.60 %
-Apparent Specific Gravity: 1.44 g/cm3 Specific Gravity: g/cm3 Porosity:
-Percentage of Water Saturation (SP): 43.84 % Water Capacity (FC): 19.73 %
-Permanent Withering Point (PWP): 10.96 % Available Water: 8.77 %
+Soil Moisture: 6.64 %
+Apparent Specific Gravity: 1.24 g/cm3 Specific Gravity: g/cm3 Porosity:
+Percentage of Water Saturation (SP): 64.36 % Water Capacity (FC): 35.40 %
+Permanent Withering Point (PWP): 16.09 % Available Water: 19.31 %
 Water content: %
 Mechanical Recommendation
 PARAMETER RESULT UNIT METHOD EVALUATION
-Sand: 37.41 %
-Silt: 35.30 % CLAY Medium Heavy
-Clay: 27.29 % Bouyoucos Loam CL LOAM Soil
+Sand: 2.96 %
+Silt: 24.53 %
+Clay: 72.52% Bouyoucos Clay C CLAY Heavy Soil
 Physicochemical Properties
 PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
-pH : 7.93 Satiety paste
-Elect. Conductivity: 508.00 µS/cm Saturated Water
-Total CaCO 3: 15.21 % wt. Volumetrically
-Active CaCO 3: 1.68 wt % C 2 O 4 (NH 4 ) 2
-Organic matter: 0.49 % Liquid oxidation
+pH : 7.80 Satiety paste
+Elect. Conductivity: 503.00 μS/cm Saturated Water
+Total CaCO 3: 25.16 wt % Volumetrically
+Active CaCO 3: 7.53 % wt. C 2 O 4 (NH 4 ) 2
+Organic matter: 7.49 % Liquid oxidation
 Available nutrient forms
 PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
-Total Nitrogen (N): 0.01 % Kjeldahl
-Nitrate Nitrogen (NO 3-N): 14.27 mg/Kg 1N KCl
+Total Nitrogen (N): 0.15 % Kjeldahl
+Nitrate Nitrogen (NO 3-N): 5.14 mg/Kg 1N KCl
 Ammonium Nitrogen (NH4-N): mg/100g 1N KCl
-Phosphorus (P): 9.95 mg/Kg Olsen
-Potassium (K): 133.80 mg/Kg NH 4AoC, pH 7
-Sodium (Na): 15.39 mg/Kg NH 4AoC, pH 7
-Calcium (Ca): 4,424.29 mg/kg NH 4AoC, pH 7
-Magnesium (Mg): 328.33 mg/Kg NH 4AoC, pH 7
-Iron (Fe): 5.50 mg/Kg DTPA
-Zinc (Zn): 0.33 mg/Kg DTPA
-Manganese (Mn): 4.02 mg/Kg DTPA
-Copper (Cu): 2.30 mg/Kg DTPA
-Boron (B): 0.95 mg/Kg Azomethine
+Phosphorus (P): 42.66 mg/Kg Olsen
+Potassium (K): 356.82 mg/Kg NH 4AoC, pH 7
+Sodium (Na): 41.38 mg/Kg NH 4AoC, pH 7
+Calcium (Ca): 8,245.39 mg/kg NH 4AoC, pH 7
+Magnesium (Mg): 682.49 mg/Kg NH 4AoC, pH 7
+Iron (Fe): 13.78 mg/Kg DTPA
+Zinc (Zn): 0.54 mg/Kg DTPA
+Manganese (Mn): 6.80 mg/Kg DTPA
+Copper (Cu): 1.52 mg/Kg DTPA
+Boron (B): 1.36 mg/Kg Azomethine
 Sulfur (S): mg/Kg
-B. SPECIAL SOIL ANALYSIS
-PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
-C.E.C. (Cation Exchange Capacity) 25.21 cmolc/Kg Calc
-C/N ratio 18.97
-Alkalinity Degree (E.S.P.) 0.27 %
-Sodium Absorption Ratio (S.A.R.) 0.02
-Chlorinating Capacity Index
-Calcium needs
-Needs in Gypsum
+B. SPECIAL SOIL ANALYSES
+PARAMETER RESULT UNIT METHOD LOW VALUE AVERAGE VALUE HIGH VALUE
+C.E.C. (Cation Exchange Capacity) 47.91 cmolc/Kg Calculated
+C/N Ratio 24.84
+Degree of Alkalization (E.S.P.) 0.38 %
+Sodium Absorption Ratio (S.A.R.) 0.04
+Chlorination Capacity Index
+Calcium Needs
+Gypsum Needs
 Nematodes -
-The head of the Laboratory
-Evangelia Liodis
-Agriculturalist
-AgroEco 240440 Hens 1 Additional Test Data
-A. TRIANGLE OF MECHANICAL COMPOSITION OF THE SOIL
-B. RELATIONSHIP OF pH AND AVAILABILITY OF SOIL NUTRIENTS
+Laboratory Manager
+Evangelia Liodi
+Agronomist
+AgroEco 240438 Zannias 1Supplementary Test Data
+A. SOIL MECHANICAL COMPOSITION TRIANGLE
+B. RELATIONSHIP OF pH AND NUTRIENT AVAILABILITY IN THE SOIL
 The availability of Phosphorus and
-of Micronutrients (Fe, Mn, B, Cu,
+Microelements (Fe, Mn, B, Cu,
 Zn) is low
-C. RATIOS OF NUTRIENT ELEMENTS
-Relationship Result Ideal Price Comments
+C. NUTRIENT RATIOS
+Ratio Result Ideal Value Comments
 Very low Ca/Mg ratio. A large part of the exchange complex is occupied by
-Ca/Mg 8.06 10-40 Mg ions, the soil becomes less permeable, harming crop growth.
-Ca/K 64.32 5 - 20
-Ca/(Mg+K) 7.17
-Ca/B 4636.56 1:100-8000 Normal value
-K/Na 5.13 1-4
-Low K/Mg ratio Magnesium creates a serious potassium uptake problem. It is recommended
-K/Mg 0.13 0.2-0.35 addition of Potassium
-K/P 13.44 2-3
-P/N 0.70 1-2
-P/Zn 29.75 4-10
-Fe/Mn 1.37 1-2
-B/W 0.07 1:10-20 Normal value
-B/P 0.10 1:25-50 Add Phosphorus
-B/K 0.01 1:75-100 Add Boron
-B/Cu 0.41 1:4-5 Add Copper
-AgroEco 240440 Hens 2C. ANALYSIS EVALUATION & LUBRICATION RECOMMENDATION
-Medium heavy soil, likely to create drainage problems
-Engineering
-Recommendation: Check whether the ground is deep enough, whether there is an impenetrable horizon and whether the underground water level is deep enough.
-The pH is suitable for the culture Cotton
+Ca/Mg 7.23 10-40 Mg ions, the soil becomes less permeable, harming crop growth.
+Ca/K 44.95 5 - 20
+Ca/(Mg+K) 6.23
+Ca/B 6040.63 1:100-8000 Normal value
+K/Na 5.09 1-4
+Low K/Mg ratio Magnesium creates a serious problem with potassium intake. It is recommended to
+K/Mg 0.16 0.2-0.35 add Potassium
+K/P 8.37 2-3
+P/N 8.29 1-2
+P/Zn 78.43 4-10
+Fe/Mn 2.03 1-2
+B/N 0.27 1:10-20 Add Nitrogen
+B/P 0.03 1:25-50 Normal value
+B/K 0.00 1:75-100 Add Boron
+B/Cu 0.90 1:4-5 Add Copper
+AgroEco 240438 Zannias 2C. ANALYSIS EVALUATION & FERTILIZATION PROPOSAL
+Heavy soil, likely to create drainage problems and unsatisfactory root development.
+Mechanical Tillage (ploughing) should be minimal and should be done when the soil has the appropriate moisture (it should be moist) to achieve improvement
+Recommendation: of aeration and drainage. The use of a ripper (soil splitter) is recommended. It can improved by surface addition of river sand or perlite
+The pH is suitable for growing Cotton
 The pH is high and is likely to create problems of micronutrient (especially iron) and phosphorus deficiencies. Nitrogen should be applied in acidic
 pH : form. Preventatively, the application of foliar sprays containing trace elements (especially Fe and Zn) and phosphorus is useful.
 Electric Low
 Conductivity: salinity No problems are created in cultivation. There is no salinity problem
-Possible creation of a hard layer in the subsoil. Low availability of P and Trace Elements. Low moisture retention capacity
+Very Very high percentage that intensifies the absorption problems of phosphorus as well as micronutrients (especially Fe and Zn). Problematic
 Total CaCO 3: Calcareous
-Insignificant as very little chlorotic action. Soil suitable for almost all cultivated species
-Active CaCO 3: Low value -
-It is recommended to add with a light incorporation of well-digested manure or organic matter of the trade, the Manure Organic Matter of the Trade
-winter or at least one month before sowing or planting. Alternatively, it is recommended to grow plants (Kg/Str.) (kg/Str.)
-Organic cover in the winter (sweet flowers). The nitrogen dose is reduced by 1.5-2 units per year
-substance: Very Low manure added. 12000 2610
+Chlorinating action. Possible chlorosis in sensitive plants
+Active CaCO 3: High value -
+Manure Organic Substance of Commerce
+The soil is supplied with organic matter. No manure addition required for 2-3 years. (Kg/Str.) (kg/Str.)
+Organic Actions to conserve organic matter as it is and cover crops in the winter are proposed
+Essence: High legume. 0 0
 Plumbing
 Details - -
 C.E.C.
@@ -123,38 +123,32 @@ C.E.C.
 C/N ratio: Slow degradation. Nitrogen is removed from the soil. Nitrogen amounts are not available for plants. Nitrogen fertilization is recommended.
 Recommended Fertilizer Recommended fertilizer
 Dose (units) Fertilizer application method Fertilizer type Dose
-Nitrogen (N) Sufficient Content - Residual Nitrogen: 3.3 Kg/Ha Recommended Nitrogen dose: 20.00 units
-5.00 mon. Basic Application with incorporation during the field preparation stage for sowing Nitrogen from organics 100.0Kg/str
-Lubrication: residues
-15.00 mon. Superficial Applied superficially by incorporating with light irrigation when the lines appear completely Urosulfate (40-0-0) 37.5Kg/str
-Lubrication:
+Nitrogen (N) Low Content - Residual Nitrogen: 1.2 Kg/Ha Recommended dose of Nitrogen: 0.00 units
 -
 -
-Phosphorus Low Content. Recommended fertilization - Residual Phosphorus: 4.3 Kg/Ha Recommended dose Phosphorus: 9.00 units
-(P)
-as P 2O 5 9mon. Application with incorporation of Phosphorite 45.0 Kg/str
-(1-20-0)
 -
-Potassium (K) Limit Content, Reduction of the effectiveness of Nitrogen fertilization. Fertilization Recommended - Residual Potassium: Recommended Potassium Dose: 8.00 Units
-as KO 57.8 Kg/Acre. CEC Rate= 1.36%
+-
+Phosphorus Very High Content. Phosphate fertilization is not required for at least two years. Possible occurrence of Fe malnutrition, Recommended dose of Phosphorus: 0.00 units
+(P) Cu, Zn, Mn and N - Residual Phosphorus: 15.9 Kg/Ha
+as P 2O 5 - -
+-
+Potassium (K) High Content. Do not apply potassium for 2-3 years. - Residual Potassium: 133.1 Kg/Ha. Percentage of CEC= Recommended Dose of Potassium: 0.00 units
+as KO 1.91%
 2
-8 units Basic Applied at the end of winter (2nd 15th day of February), with deep incorporation of Potassium Chloride 13.1 Kg/str
-Lubrication: at least 10 cm. (0-0-61)
 - -
-Magnesium High Content sufficient for 3-4 years. Can cause potassium deficiency - Percentage of CEC with Mg= 10.85 %
+- -
+Magnesium High Content sufficient for 3-4 years. May cause potassium deficiency - Percentage of CEC with Mg= 11.87 %
 (Mg)
 - -
 -
-Calcium (Ca) Very High Content 87.52% of CEC 22.07 cmol/Kg
+Calcium (Ca) Very High Content 85.84% of CEC 41.12 cmol/Kg
 It is recommended to destroy the crust formed on the surface, to increase the organic matter and to apply drip irrigation (or otherwise frequent irrigation with small
 amounts of water)
 - -
 -
-Iron (Fe) Low Content
-0.6 units Basic Applied to the soil at the end of winter without incorporation. Heavy soils are good for Sequestrene 138 10.9 Kg/str
-Fertilization: applied a little earlier. The recommended dose is distributed so that it benefits the whole (Fe-EDDHA NaFe 6%)
-root system of plants.
-Foliar application is not recommended except in exceptional cases -
+Iron (Fe) Sufficient Content
+- -
+-
 Zinc Very Low Content
 (Zn) Foliar Spraying 1-2 times during their growth period with a solution containing 0.05 - 0.5% Zinc Sulphate
 Lubrication: heptahydrate
@@ -163,20 +157,20 @@ Manganese Low Content
 (Mn) - -
 - Foliar Foliar application at the stage of appearance of the combs Manganese chelate (Mn-EDTA)
 Lubrication:
-Copper (Cu) Very High Content. Sufficient for 3-5 years
+Copper (Cu) High Content. Possible Iron deficiency. No lubrication is recommended
 - -
-Boron (B) Sufficient Content
+Boron (B) High content. No lubrication is recommended
 - -
 - -
-AgroEco 240440 Hens 3D. OBSERVATIONS & COMMENTS
+AgroEco 240438 Zannias 3D. OBSERVATIONS & COMMENTS
 It is recommended not to install plants that require acidic soil, e.g. Blueberries, Blueberries, etc
 It is recommended not to install plants that are not favored by high Calcium Carbonate (CaCO3)
-After periods of plant stress due to low temperatures, drought, hail etc. It is recommended to use a biostimulator in the stage
+After periods of plant stress due to low temperatures, drought, hail, etc. It is recommended to use a biostimulator at the stage
 of comb formation and during flowering. Dosage 0.3L per hectare with a quantity of spraying solution greater than 20 L per hectare
 REQUIREMENTS OF CULTIVATION IN SOIL & CLIMATE
 Cotton is a plant with great adaptability and can be grown in a wide variety of soils. High yields are achieved in
 medium mechanical texture, deep fertile soils with adequate drainage with good water content and organic matter < 3.0%. On light soils
-requires increased amounts of fertilizers while heavy soils that are waterlogged cause suffocation and diseases in the root system and are
+requires increased amounts of fertilizers while heavy soils that are waterlogged cause suffocation and diseases in the root system and it is
 unsuitable for cultivation. Shows good tolerance to soil salinity. As for acidity, it grows in a wide pH range
 from 5.5 to 8.0, medium from 6.8-7.3. It is a plant of warm climates, with special requirements in high temperatures during the growth period and
 after sowing, the minimum soil temperature for satisfactory germination is 13°C, while the optimum temperature
@@ -189,16 +183,16 @@ of Phosphorus (the lack of Phosphorus in the first stages of cultivation is not 
 Surface fertilization (combs): The surface fertilization seeks to meet the needs of nutrients that are necessary for
 development of summer vegetation, flowering and fruiting, as well as nut development. It is recommended to be applied by
 the beginning of the appearance of the lines until the beginning of flowering in a dose (stabilized forms of Ammonia Nitrogen) or more
-doses (through hydrofertilization with Nitrate forms of Nitrogen). Granted the remaining amount of Nitrogen (50%).
+doses (through hydrofertilization with Nitrate forms of Nitrogen). The remaining amount of Nitrogen (50%) is administered.
 IRRIGATION
-According to the analysis data, the soil at 0-30 cm weighs 432.00 tons
-The maximum amount of water that the soil can hold is: 85.22 m2. the acre
+According to the analysis data, the soil at 0-30 cm weighs 372.75 tons
+The maximum amount of water that the soil can hold is: 131.94 m2. the acre
 The active root layer depth of the crop where the main mass of plant roots develop and the main is formed
 supplying the roots with water is: 65 - 130 cm.
 The total water requirements of cotton average around 700 km per hectare per year. From germination to the appearance of combs
 Recommended irrigation method: STAGDIN
 TREATMENT OF THE SOIL
-The mechanical treatment of the soil must be done when its moisture is at 50-60% of its water capacity.
+The mechanics soil treatment must be done when its moisture is at 50-60% of its water capacity.
 LUBRICATION APPLICATION INSTRUCTIONS
 - The application of the basic fertilization, in the winter period, should not be done in periods of frost.
 - The application of surface lubrication, in the summer, should not be done during hot hours.
@@ -213,15 +207,15 @@ application. It is recommended to perform a compatibility test before each use.
 - Spray in cold and wet periods of the twenty-four hours (at night or early morning).
 - Never spray stressed plants.
 - Do not spray when the trees or crop is in distress or a general weakness.
-- Particular attention must be paid to the pH of the spray liquid to vary between 5.5 and 6.5`
+- Particular care must be taken so that the pH of the spray liquid varies between 5.5 and 6.5
 - Application should be done evenly, covering the foliage as much as possible on both sides
 - The effectiveness of fertilization usually increases when the administration of the fertilizer is done in many small doses, with the maximum amount of
 is granted in the period when the maximum need for cultivation is observed. In this direction, frequent irrigation and
 small doses.
 The fertilizers proposed are for basic types on the market and not for products of specific companies.
-The present advisory fertilization of a plot of land is based on the laboratory results of the sample provided and
+The present advisory plot fertilization results with based on the laboratory results of the sample submitted and
 referred to in this certificate and is indicative of the general culture referred to. Adjustments may be required due to
 parameters of age, cultivation, method of installation, climatic conditions or other parameters that may
 concern the specific plot of land.
 Re-testing of the soil in three years is recommended
-AgroEco 240440 Hens 4
+AgroEco 240438 Zannias 4

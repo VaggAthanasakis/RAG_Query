@@ -18,6 +18,7 @@ import pdfplumber
 import ocrmypdf
 from deep_translator import GoogleTranslator
 from langdetect import detect
+import json
 #import fitz
 #from pdfminer.high_level import extract_text
 #from tika import parser
@@ -99,7 +100,7 @@ def text_translator(greek_text):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("/home/eathanasakis/Thesis/RAG_Query/Resources/Soil_Analysis_Resources/Soilanalysis-38-Zannias/Zanias/121/240440-kottas.pdf")
+input_file_path = ("/home/eathanasakis/Thesis/RAG_Query/Resources/Soil_Analysis_Resources/Soilanalysis-38-Zannias/Zanias/108/240438-zannias-kephales-bio.pdf")
 response_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
 text_output_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
 
@@ -215,7 +216,7 @@ Settings.embed_model = embed_model
 Settings.context_window = 2048
 
 
-prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Soil_Analysis_prompt.txt")
+prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Soil_Analysis_JSON_prompt.txt")
 
 
 ########################################################
@@ -237,7 +238,12 @@ vector_store_index = VectorStoreIndex.from_documents(documents, splitter=splitte
 query_engine_vector_index = vector_store_index.as_query_engine()
 
 # Create the response based on the input file and the prompt
-response = query_engine_vector_index.query(prompt)
+response = query_engine_vector_index.query(prompt) 
+
+# Convert the output into a json string
+dict_string = json.loads(str(response))
+json_string = json.dumps(dict_string)
+print("\n",json_string)
 
 # Store the response into a text file 
 with open(response_file, "w", encoding='utf-8') as file:
@@ -253,6 +259,8 @@ query_engine_summary_index = document_summary_index.as_query_engine()
 
 # You can use the same prompt with the query_engine_summary_index
 response_summary = query_engine_summary_index.query(prompt)
+
+
 
 with open(response_file, "a", encoding='utf-8') as file:
     file.write("\n\nUsing DocumentSummaryIndex\n\n")
