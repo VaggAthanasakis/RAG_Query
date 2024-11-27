@@ -1,5 +1,5 @@
 prompt = f"""
-Please extract the following details from the provided document:
+Please extract the following details from all the provided documents:
 
 Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
 CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
@@ -20,4 +20,5 @@ Total Weight: [Extracted Total Weight]
 Instructions:
 Do not rewrite the question.
 Do not make an intro or an outro.
+Do this for every document
 """

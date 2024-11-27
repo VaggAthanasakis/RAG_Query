@@ -1,27 +1,8 @@
 Using VectorStoreIndex
 
-{
-    "Full name": "Zannias Ioannis",
-    "Type of cultivation": "Cotton",
-    "Place": "Orchomenos Viotia",
-    "Sand": "2.96 %",
-    "Silt": "24.53 %",
-    "Clay": "72.52%",
-    "pH": "7.80" ,
-    "Electric. Conductance": "503.00 μS/cm",
-    "Organic Matter": "7.49 %" ,
-    "Total Nitrogen (N)": "0.15 %",
-    "Nitrate Nitrogen (NO3-N)": "5.14 mg/Kg",
-    "Phosphorus (P)": "42.66 mg/Kg",
-    "potassium (K)": "356.82 mg/Kg",
-    "sodium (Na)": "41.38 mg/Kg",
-    "calcium (Ca)": "8245.39 mg/kg",
-    "magnesium (Mg)": "682.49 mg/Kg",
-    "iron (Fe)": "13.78 mg/Kg",
-    "zinc (Zn)": "0.54 mg/Kg",
-    "Manganese (Mn)": "6.80 mg/Kg",
-    "Copper (Cu)": "1.52 mg/Kg",
-    "Boron (B)": "1.36 mg/Kg",
-    "Evaluation" : "Heavy Soil",
-    "Document Code" : "240438"
-}
+Shipper: SKYSEALAND SHIPPING LINES
+CONSIGNEE: ARIAN MARITIME S.A
+Document number: B/L NUMBER STFL21072190, SHIPPER DOCUMENT NUMBER B/L NUMBER 21072800108
+B/L Number: STFL21072190, 21072800108
+Type of Cargo: WOODEN BOXS, USED SHIP SPARE PARTS
+Total Weight: 7800.00 KGS

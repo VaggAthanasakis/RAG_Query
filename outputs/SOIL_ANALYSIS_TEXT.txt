@@ -1,221 +1,49 @@
-Soil, Plant Tissue & Irrigation Water Analysis Laboratory
-ANALYSIS RESULTS REPORT
-LAST NAME: ZANNIAS
-NAME: IOANNIS
-LAST NAME:
-A.F.M.:
-ADDRESS:
-LOCAL COMMUNITY/ COUNTY: ORCHOMENOS VIOTIAS
-PHONE / EMAIL:
-FIELD LOCATION: ORCH 8 / KEFALES
-VILLAGE / TOWN ORCHOMENOS VIOTIA
-EXTENSION (STR):
-CROP: COTTON
-VARIETY:
-GROUND SLOPE:
-IRRIGATION METHOD:
-TYPE OF SAMPLES: SOIL
-SAMPLING: THE SAME
-DATE OF RECEIPT: 25/4/2024
-SAMPLE CODES: 240438
-ANALYSIS TYPE: FULL
-Laboratory Contact Details:
-Address: Sarantaporou 148, 43100 Karditsa
-Tel. 2441076184, Fax: 2441076188, Mobile: 6976777093
-E-mail: info@agroeco.gr Site: www.agroeco.gr
-Karditsa 2024
-The results report may not be reproduced in part without the approval of the laboratory
-The results of the analyzes correspond to the samples analyzed on this dateSample Code 240438
-Sampling Depth (cm) 0-30 Analysis Period 4/26/2024 to 5/3/2024
-A. BASIC SOIL ANALYZES
-Hydraulic Elements
-Soil Moisture: 6.64 %
-Apparent Specific Gravity: 1.24 g/cm3 Specific Gravity: g/cm3 Porosity:
-Percentage of Water Saturation (SP): 64.36 % Water Capacity (FC): 35.40 %
-Permanent Withering Point (PWP): 16.09 % Available Water: 19.31 %
-Water content: %
-Mechanical Recommendation
-PARAMETER RESULT UNIT METHOD EVALUATION
-Sand: 2.96 %
-Silt: 24.53 %
-Clay: 72.52% Bouyoucos Clay C CLAY Heavy Soil
-Physicochemical Properties
-PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
-pH : 7.80 Satiety paste
-Elect. Conductivity: 503.00 μS/cm Saturated Water
-Total CaCO 3: 25.16 wt % Volumetrically
-Active CaCO 3: 7.53 % wt. C 2 O 4 (NH 4 ) 2
-Organic matter: 7.49 % Liquid oxidation
-Available nutrient forms
-PARAMETER RESULT UNIT METHOD LOW VALUE MEDIUM VALUE HIGH VALUE
-Total Nitrogen (N): 0.15 % Kjeldahl
-Nitrate Nitrogen (NO 3-N): 5.14 mg/Kg 1N KCl
-Ammonium Nitrogen (NH4-N): mg/100g 1N KCl
-Phosphorus (P): 42.66 mg/Kg Olsen
-Potassium (K): 356.82 mg/Kg NH 4AoC, pH 7
-Sodium (Na): 41.38 mg/Kg NH 4AoC, pH 7
-Calcium (Ca): 8,245.39 mg/kg NH 4AoC, pH 7
-Magnesium (Mg): 682.49 mg/Kg NH 4AoC, pH 7
-Iron (Fe): 13.78 mg/Kg DTPA
-Zinc (Zn): 0.54 mg/Kg DTPA
-Manganese (Mn): 6.80 mg/Kg DTPA
-Copper (Cu): 1.52 mg/Kg DTPA
-Boron (B): 1.36 mg/Kg Azomethine
-Sulfur (S): mg/Kg
-B. SPECIAL SOIL ANALYSES
-PARAMETER RESULT UNIT METHOD LOW VALUE AVERAGE VALUE HIGH VALUE
-C.E.C. (Cation Exchange Capacity) 47.91 cmolc/Kg Calculated
-C/N Ratio 24.84
-Degree of Alkalization (E.S.P.) 0.38 %
-Sodium Absorption Ratio (S.A.R.) 0.04
-Chlorination Capacity Index
-Calcium Needs
-Gypsum Needs
-Nematodes -
-Laboratory Manager
-Evangelia Liodi
-Agronomist
-AgroEco 240438 Zannias 1Supplementary Test Data
-A. SOIL MECHANICAL COMPOSITION TRIANGLE
-B. RELATIONSHIP OF pH AND NUTRIENT AVAILABILITY IN THE SOIL
-The availability of Phosphorus and
-Microelements (Fe, Mn, B, Cu,
-Zn) is low
-C. NUTRIENT RATIOS
-Ratio Result Ideal Value Comments
-Very low Ca/Mg ratio. A large part of the exchange complex is occupied by
-Ca/Mg 7.23 10-40 Mg ions, the soil becomes less permeable, harming crop growth.
-Ca/K 44.95 5 - 20
-Ca/(Mg+K) 6.23
-Ca/B 6040.63 1:100-8000 Normal value
-K/Na 5.09 1-4
-Low K/Mg ratio Magnesium creates a serious problem with potassium intake. It is recommended to
-K/Mg 0.16 0.2-0.35 add Potassium
-K/P 8.37 2-3
-P/N 8.29 1-2
-P/Zn 78.43 4-10
-Fe/Mn 2.03 1-2
-B/N 0.27 1:10-20 Add Nitrogen
-B/P 0.03 1:25-50 Normal value
-B/K 0.00 1:75-100 Add Boron
-B/Cu 0.90 1:4-5 Add Copper
-AgroEco 240438 Zannias 2C. ANALYSIS EVALUATION & FERTILIZATION PROPOSAL
-Heavy soil, likely to create drainage problems and unsatisfactory root development.
-Mechanical Tillage (ploughing) should be minimal and should be done when the soil has the appropriate moisture (it should be moist) to achieve improvement
-Recommendation: of aeration and drainage. The use of a ripper (soil splitter) is recommended. It can improved by surface addition of river sand or perlite
-The pH is suitable for growing Cotton
-The pH is high and is likely to create problems of micronutrient (especially iron) and phosphorus deficiencies. Nitrogen should be applied in acidic
-pH : form. Preventatively, the application of foliar sprays containing trace elements (especially Fe and Zn) and phosphorus is useful.
-Electric Low
-Conductivity: salinity No problems are created in cultivation. There is no salinity problem
-Very Very high percentage that intensifies the absorption problems of phosphorus as well as micronutrients (especially Fe and Zn). Problematic
-Total CaCO 3: Calcareous
-Chlorinating action. Possible chlorosis in sensitive plants
-Active CaCO 3: High value -
-Manure Organic Substance of Commerce
-The soil is supplied with organic matter. No manure addition required for 2-3 years. (Kg/Str.) (kg/Str.)
-Organic Actions to conserve organic matter as it is and cover crops in the winter are proposed
-Essence: High legume. 0 0
-Plumbing
-Details - -
-C.E.C.
-(Cation Exchange Capacity): Fertile soil with very good availability of nutrients, soil pH is difficult to change
-C/N ratio: Slow degradation. Nitrogen is removed from the soil. Nitrogen amounts are not available for plants. Nitrogen fertilization is recommended.
-Recommended Fertilizer Recommended fertilizer
-Dose (units) Fertilizer application method Fertilizer type Dose
-Nitrogen (N) Low Content - Residual Nitrogen: 1.2 Kg/Ha Recommended dose of Nitrogen: 0.00 units
--
--
--
--
-Phosphorus Very High Content. Phosphate fertilization is not required for at least two years. Possible occurrence of Fe malnutrition, Recommended dose of Phosphorus: 0.00 units
-(P) Cu, Zn, Mn and N - Residual Phosphorus: 15.9 Kg/Ha
-as P 2O 5 - -
--
-Potassium (K) High Content. Do not apply potassium for 2-3 years. - Residual Potassium: 133.1 Kg/Ha. Percentage of CEC= Recommended Dose of Potassium: 0.00 units
-as KO 1.91%
-2
-- -
-- -
-Magnesium High Content sufficient for 3-4 years. May cause potassium deficiency - Percentage of CEC with Mg= 11.87 %
-(Mg)
-- -
--
-Calcium (Ca) Very High Content 85.84% of CEC 41.12 cmol/Kg
-It is recommended to destroy the crust formed on the surface, to increase the organic matter and to apply drip irrigation (or otherwise frequent irrigation with small
-amounts of water)
-- -
--
-Iron (Fe) Sufficient Content
-- -
--
-Zinc Very Low Content
-(Zn) Foliar Spraying 1-2 times during their growth period with a solution containing 0.05 - 0.5% Zinc Sulphate
-Lubrication: heptahydrate
--
-Manganese Low Content
-(Mn) - -
-- Foliar Foliar application at the stage of appearance of the combs Manganese chelate (Mn-EDTA)
-Lubrication:
-Copper (Cu) High Content. Possible Iron deficiency. No lubrication is recommended
-- -
-Boron (B) High content. No lubrication is recommended
-- -
-- -
-AgroEco 240438 Zannias 3D. OBSERVATIONS & COMMENTS
-It is recommended not to install plants that require acidic soil, e.g. Blueberries, Blueberries, etc
-It is recommended not to install plants that are not favored by high Calcium Carbonate (CaCO3)
-After periods of plant stress due to low temperatures, drought, hail, etc. It is recommended to use a biostimulator at the stage
-of comb formation and during flowering. Dosage 0.3L per hectare with a quantity of spraying solution greater than 20 L per hectare
-REQUIREMENTS OF CULTIVATION IN SOIL & CLIMATE
-Cotton is a plant with great adaptability and can be grown in a wide variety of soils. High yields are achieved in
-medium mechanical texture, deep fertile soils with adequate drainage with good water content and organic matter < 3.0%. On light soils
-requires increased amounts of fertilizers while heavy soils that are waterlogged cause suffocation and diseases in the root system and it is
-unsuitable for cultivation. Shows good tolerance to soil salinity. As for acidity, it grows in a wide pH range
-from 5.5 to 8.0, medium from 6.8-7.3. It is a plant of warm climates, with special requirements in high temperatures during the growth period and
-after sowing, the minimum soil temperature for satisfactory germination is 13°C, while the optimum temperature
-environment for rapid growth and high yields is 32°C - 34°C
-BASIC PRINCIPLES OF LUBRICATION
-Basic fertilization (in the seed): Seeks to meet the needs in nutrients that are necessary for the good establishment of the plants, the
-creation of a rich root system and the early and robust growth of the vegetation.
-of Phosphorus (the lack of Phosphorus in the first stages of cultivation is not corrected later), the entire amount of Potassium and up to
-50% of the amount of Nitrogen (it is recommended to use ammonium fertilizers, slow release).
-Surface fertilization (combs): The surface fertilization seeks to meet the needs of nutrients that are necessary for
-development of summer vegetation, flowering and fruiting, as well as nut development. It is recommended to be applied by
-the beginning of the appearance of the lines until the beginning of flowering in a dose (stabilized forms of Ammonia Nitrogen) or more
-doses (through hydrofertilization with Nitrate forms of Nitrogen). The remaining amount of Nitrogen (50%) is administered.
-IRRIGATION
-According to the analysis data, the soil at 0-30 cm weighs 372.75 tons
-The maximum amount of water that the soil can hold is: 131.94 m2. the acre
-The active root layer depth of the crop where the main mass of plant roots develop and the main is formed
-supplying the roots with water is: 65 - 130 cm.
-The total water requirements of cotton average around 700 km per hectare per year. From germination to the appearance of combs
-Recommended irrigation method: STAGDIN
-TREATMENT OF THE SOIL
-The mechanics soil treatment must be done when its moisture is at 50-60% of its water capacity.
-LUBRICATION APPLICATION INSTRUCTIONS
-- The application of the basic fertilization, in the winter period, should not be done in periods of frost.
-- The application of surface lubrication, in the summer, should not be done during hot hours.
-- For the correct application of hydrofertilization, the fertilizer is channeled into the middle third "set" of the irrigation system (If you have scheduled 12-hour irrigation
-turn on irrigation from 4 to 8 o'clock)
-- The foliar sprays of trace elements can be combined with a dilute solution of urea (0.2-0.3%) for better penetration into the interior
-leaves as well as neutralizing the free acidity of the solution with lime water. In case you prepare mixtures yourself
-micronutrients, use only chelated forms and not sulfated forms. Solutions should be prepared immediately before
-application. It is recommended to perform a compatibility test before each use.
-- For the application of foliar fertilizers:
-- Do not do it in hot weather and the spray solution should wash the leaf from both sides.
-- Spray in cold and wet periods of the twenty-four hours (at night or early morning).
-- Never spray stressed plants.
-- Do not spray when the trees or crop is in distress or a general weakness.
-- Particular care must be taken so that the pH of the spray liquid varies between 5.5 and 6.5
-- Application should be done evenly, covering the foliage as much as possible on both sides
-- The effectiveness of fertilization usually increases when the administration of the fertilizer is done in many small doses, with the maximum amount of
-is granted in the period when the maximum need for cultivation is observed. In this direction, frequent irrigation and
-small doses.
-The fertilizers proposed are for basic types on the market and not for products of specific companies.
-The present advisory plot fertilization results with based on the laboratory results of the sample submitted and
-referred to in this certificate and is indicative of the general culture referred to. Adjustments may be required due to
-parameters of age, cultivation, method of installation, climatic conditions or other parameters that may
-concern the specific plot of land.
-Re-testing of the soil in three years is recommended
-AgroEco 240438 Zannias 4
+Consignee or To Order :
+HYDOILE.E.
+TRADE & REPAIR OF HYDRAULIC SYSTEMS.
+21,DRAKONTOS STR,PC 10442, ATHENS,GREECE
+VAT:EL 801293314 TAX OFFICE: A’ATHENS
+T: (+30) 2105153957 _ F: (+30) 2105153956
+Notify Party (see Clause 20 on reverse of this Bill
+Bil of Ladding No. SSL21169
+Reference No. :
+INV# HTTEXP-0221 DT:26-07-21
+EXP# 1472-010588-21 DT:28-07-21
+S/C NO# HTTEXP-0221 DT:15-06-21
+of Lading) Also Notify (see Clause 20 on reverse of this Bill of Lading)
+SAME AS CONSIGNEE WAL
+Re ERED
+ay SURREND
+telistcantage by: CRPPIRGBNG,BANGLADESH | °° Setvery of GoogsPisese AQPA RITIME S.A.
+133A FILONOS STREET
+Ocean Vessel / voy : Port of Loading PIRAEUS-GREECE 18536
+BANGKOK \V-107S CHITTAGONG,BANGLADESH TEL: +302104170211, FAX: +302104170215
+Port of Placeof
+PIRAEUS, GREECE
+PIC: MRS. AGAPI MOUSSAKOU Delivery
+PIRAEUS, GREECE
+PARTICULARS FURNISHED BY SHIPPER
+MKS & NOS / CONTAINER NOS. NO. OF PKGS DESCRIPTION OF PACKAGES AND GOODS GROSS WEIGT MEASUREMENT
+SHIPPERS LOAD & COUNT | SAID TQ WEIGH
+CONTAINER NO: 17 (SEVENTEEN WOODEN BOX ONLY) 7,800.00 10.00
+CCLU3397573/20°DV WOODEN USED SHIP SPARE PARTS KGS CBM
+SEAL# JP2385794 BCXx S TC: A6VM 200 HYD MOTOR
+AMC 30 HYD MOTOR WITH BRAKE CLUTCH UNIT
+SHIPPING MARKS: P 140 HYD PUMP
+CMS-0221 * | FG 16 HYD PUMP
+HMC 325 HYD MOTOR
+HATLAPA 25235 HYD MOTOR WITH CONTROL BUOCK
+3V FH2B HYD PUMP
+HMB 150 HYD MOTOR
+6N 67 HYD PUMP WITH FEED PUMP
+6N 57 HYD PUMP WITH FEED PUMP
+LV 500 HYD PUMP
+H.S CODE:84879000
+CFS/CFS
+SHIPPED ON BOARD
+DATE:30-JUL-2021
+ORIGINAL
+BAL TO BE RELEASED AT a OCEAN PREIGHT PAYABLE AT
+FREIGHT RATES CHARGES WEIGHTS AND/OR PREPAID U.S.S COLLECT U.S.S LOCAL
+MEASUREMENTS (SUBJECT TO CORRECTION)
+FREIGHT |PREPAID

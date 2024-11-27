@@ -100,14 +100,17 @@ def text_translator(greek_text):
 BaseLLM.predict = patched_predict
 
 # input, output files
-input_file_path = ("/home/eathanasakis/Thesis/RAG_Query/Resources/Soil_Analysis_Resources/Soilanalysis-38-Zannias/Zanias/108/240438-zannias-kephales-bio.pdf")
-response_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
-text_output_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
+# input_file_path = ("/home/eathanasakis/Thesis/RAG_Query/Resources/Soil_Analysis_Resources/Soilanalysis-38-Zannias/Zanias/108/240438-zannias-kephales-bio.pdf")
+# response_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_RES.txt")
+# text_output_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/SOIL_ANALYSIS_TEXT.txt")
 
 # input_file_path = ("RAG_Query/OCR/OCR_outputs/TEST_PDF_3_OCRmyPDF_def.pdf") 
 # response_file = ("RAG_Query/outputs/TEST_PDF_3_RES.txt")
 # text_output_file = ("RAG_Query/outputs/TEST_PDF_3_TEXT.txt")
 
+input_file_path = "/home/eathanasakis/Thesis/RAG_Query/Resources/Thesis_Resources/PDFs/TEST_PDF_2.pdf"
+response_file = "/home/eathanasakis/Thesis/RAG_Query/outputs/TEST_PDF_RES.txt"
+text_output_file = ("/home/eathanasakis/Thesis/RAG_Query/outputs/TEST_PDF_TEXT.txt")
 
 
 # Detect if the PDF is scanned
@@ -126,35 +129,35 @@ if is_pdf_scanned(input_file_path):
     
 # If it's not scanned, load the document normally
 # Use PDFPlumber
-# text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
-with pdfplumber.open(input_file_path) as pdf:
-    full_text = ""
-    for page in pdf.pages:
-        full_text += page.extract_text()  # Extracts text page-by-page
+#text_output_file = "outputs/SOIL_ANALYSIS_TEXT_PDFPlumber.txt"
+# with pdfplumber.open(input_file_path) as pdf:
+#     full_text = ""
+#     for page in pdf.pages:
+#         full_text += page.extract_text()  # Extracts text page-by-page
 
-# Check if we have to translate the text
-if (detect(full_text) != 'en'):
-    print("\nTranslating the text..")
-    full_text = text_translator(full_text)
 
-pathlib.Path(text_output_file).write_bytes(full_text.encode())
+# # # Check if we have to translate the text
+# # if (detect(full_text) != 'en'):
+# #     print("\nTranslating the text..")
+# #     full_text = text_translator(full_text)
 
-documents = [Document(text=full_text)]
+# pathlib.Path(text_output_file).write_bytes(full_text.encode())
+
+# documents = [Document(text=full_text)]
     
     # with open("RAG_Query/outputs/translated.txt", encoding='utf-8') as file:
     #     translated_text = file.read()
     # documents = [Document(text=translated_text)]
 
     # # Use SimpleDirectoryReader
-    # documents = SimpleDirectoryReader(
-    #     input_files=[input_file_path]
-    # ).load_data()
+documents = SimpleDirectoryReader(
+    input_files=[input_file_path]).load_data()
 
     # # Open the file in write mode
-    # with open(text_output_file, "w", encoding="utf-8") as file:
-    #     for doc in documents:
-    #     # Assuming each doc has a 'text' attribute containing the document's content
-    #         file.write(doc.text + "\n\n")  # Write each document's content to the file
+with open(text_output_file, "w", encoding="utf-8") as file: 
+    for doc in documents:
+      # Assuming each doc has a 'text' attribute containing the document's content
+      file.write(doc.text + "\n\n")  # Write each document's content to the file
 
     # # Use pymupdf4llm 
     # text_output_file = "outputs/SOIL_ANALYSIS_TEXT_FOR_LLM.txt"
@@ -194,7 +197,7 @@ documents = [Document(text=full_text)]
 
 
 # load the LLM that we are going to use
-llm = OllamaLLM(model="llama3.1:8b", temperature = 0.1)
+llm = OllamaLLM(model="llama3.1:8b", temperature = 0)
 
 # https://docs.llamaindex.ai/en/stable/module_guides/supporting_modules/service_context_migration/
 #embed_model = "local:BAAI/bge-small-en-v1.5"
@@ -216,7 +219,7 @@ Settings.embed_model = embed_model
 Settings.context_window = 2048
 
 
-prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Soil_Analysis_JSON_prompt.txt")
+prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Info_extraction_prompt.txt")
 
 
 ########################################################
@@ -241,9 +244,9 @@ query_engine_vector_index = vector_store_index.as_query_engine()
 response = query_engine_vector_index.query(prompt) 
 
 # Convert the output into a json string
-dict_string = json.loads(str(response))
-json_string = json.dumps(dict_string)
-print("\n",json_string)
+# dict_string = json.loads(str(response))
+# json_string = json.dumps(dict_string)
+# print("\n",json_string)
 
 # Store the response into a text file 
 with open(response_file, "w", encoding='utf-8') as file:
@@ -259,7 +262,6 @@ query_engine_summary_index = document_summary_index.as_query_engine()
 
 # You can use the same prompt with the query_engine_summary_index
 response_summary = query_engine_summary_index.query(prompt)
-
 
 
 with open(response_file, "a", encoding='utf-8') as file:
