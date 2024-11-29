@@ -7,11 +7,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaLLM
 from llama_index.core import Settings
 from langchain.llms import BaseLLM
-import pytesseract
-from pdf2image import convert_from_path
-from PyPDF2 import PdfReader
-from sentence_transformers import SentenceTransformer
-from langchain_ollama import OllamaEmbeddings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
 
