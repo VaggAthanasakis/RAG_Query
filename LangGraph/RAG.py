@@ -36,13 +36,13 @@ def load_prompt(filename):
 # Ignore all warnings
 warnings.filterwarnings("ignore")
 
-input_file_path = r"C:\Users\vagga\Desktop\RAG\RAG_Query\Resources\Thesis_Resources\PDFs\TEST_PDF.pdf"
+input_file_path = r"/home/eathanasakis/Thesis/RAG_Query/Resources/Thesis_Resources/PDFs/TEST_PDF.pdf"
 
 embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
 
 splitter = SentenceSplitter(chunk_size=700)
 
-llm = ChatOllama(model="llama3.1:8b", temperature = 0)
+llm = ChatOllama(model="llama3.1:70b", temperature = 0)
 #llm = ChatOllama(model="llama3-groq-tool-use:latest", temperature = 0)
 
 
@@ -75,7 +75,7 @@ def query_tool(query: str):
 @tool
 def create_json(response: str):
     """
-    Create a json response from the input
+    Create a json response from the input if you are asked to.
 
     """
     dict_string = json.loads(str(response))
@@ -116,12 +116,9 @@ builder.add_edge("tools", "assistant")
 
 react_graph = builder.compile()
 
-display_graph(react_graph)
+#display_graph(react_graph)
 
-
-#messages = [HumanMessage(content=" Retrieve the Shipper and the document number. After that, convert the output into json format")]
-#messages = [HumanMessage(content=" Hi!")]
-prompt = load_prompt(r"C:\Users\vagga\Desktop\RAG\RAG_Query\Prompts\new_info_extraction.txt")
+prompt = load_prompt(r"/home/eathanasakis/Thesis/RAG_Query/Prompts/new_info_extraction.txt")
 #prompt = "Hello"
 messages = [HumanMessage(content=prompt)]
 

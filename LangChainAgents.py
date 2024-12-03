@@ -7,10 +7,13 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 import pdfplumber
 from llama_index.core import Settings
 from langchain_core.tools import tool
+from langchain.agents import initialize_agent
 import warnings
-from langgraph.prebuilt import create_react_agent
+#from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import HumanMessage
 from langchain.schema import AIMessage
+from langchain_ollama import OllamaLLM
+
 
 
 # Ignore all warnings
@@ -22,41 +25,28 @@ def load_prompt(filename):
         return file.read()
 
 
-def RAG():
+input_file_path = "/home/eathanasakis/Thesis/RAG_Query/Resources/Thesis_Resources/PDFs/TEST_PDF.pdf"
+llm = ChatOllama(model="llama3.1:8b", temperature= 0)
+# load the LLM that we are going to use
+embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
+text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+    chunk_size = 200,
+    chunk_overlap = 0
+)
+with pdfplumber.open(input_file_path) as pdf:
+        full_text = ""
+        for page in pdf.pages:
+            full_text += page.extract_text()  # Extracts text page-by-page
+documents = []
+# Add document to the list
+documents.append(Document(text=full_text))
+Settings.llm = llm
+Settings.embed_model = embed_model
+Settings.context_window = 2048
+vector_store_index = VectorStoreIndex.from_documents(documents,
+                                                    splitter=text_splitter, 
+                                                    show_progress=True)   
 
-    input_file_path = r"C:\Users\vagga\Desktop\RAG\RAG_Query\Resources\Thesis_Resources\PDFs\TEST_PDF.pdf"
-
-    llm = ChatOllama(model="llama3.1:8b", temperature= 0)
-    # load the LLM that we are going to use
-
-    embed_model = HuggingFaceEmbedding('paraphrase-multilingual-MiniLM-L12-v2')
-
-    text_splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
-        chunk_size = 200,
-        chunk_overlap = 0
-    )
-
-    with pdfplumber.open(input_file_path) as pdf:
-            full_text = ""
-            for page in pdf.pages:
-                full_text += page.extract_text()  # Extracts text page-by-page
-
-
-    documents = []
-    # Add document to the list
-    documents.append(Document(text=full_text))
-
-    Settings.llm = llm
-    Settings.embed_model = embed_model
-    Settings.context_window = 2048
-
-    vector_store_index = VectorStoreIndex.from_documents(documents,
-                                                        splitter=text_splitter, 
-                                                        #embed_model = embed_model,
-                                                        #llm = llm,
-                                                        show_progress=True)   
-
-    return vector_store_index
 
 # retriever = vector_store_index.as_retriever()       # this retrieves the raw k=2 docs from the documents
 # query_engine = vector_store_index.as_query_engine() # this retrives the most relevants docs and then combines 
@@ -65,23 +55,25 @@ def RAG():
 
 @tool                                       
 def retrieve_documents(query: str) -> str:
-      """Retrieve documents from the vector store based on the query."""
-      print("\nCalling retrieve_documents Tool")
-      retriever = RAG().as_query_engine()    # this retrieves the raw k=2 docs from the documents
+      """Retrieve raw documents from the vector store for analysis. 
+         Use this tool when the query explicitly demands raw documents."""
+      retriever = vector_store_index.as_retriever()
       return str(retriever.retrieve(query))
 
 @tool
 def response_by_docs(query: str) -> str:
-      """Provide an appropriate response to the input based on the vector store"""
+      """Provide specific information extracted from the vector store documents. 
+         Use this tool for detailed queries like sender, receiver, etc."""
       print("\nCalling response_by_docs Tool")
-      query_engine = RAG().as_query_engine()
+      query_engine = vector_store_index.as_query_engine()
       return str(query_engine.query(query))
 
 
 
-tools = [retrieve_documents, response_by_docs]
+tools = [response_by_docs, retrieve_documents]
 
 llm = ChatOllama(model="llama3.1:8b", temperature= 0)
+#llm = OllamaLLM(model="llama3.1:8b", temperature= 0)
 
 
 # prompt = ChatPromptTemplate.from_messages([
@@ -92,44 +84,21 @@ llm = ChatOllama(model="llama3.1:8b", temperature= 0)
 
 
 # create the agent
-agent_executor = create_react_agent(llm,
-                                    tools=tools)
+# agent_executor = create_react_agent(llm,
+#                                     tools=tools)
+
+agent = initialize_agent(llm=llm,
+                         tools=tools,
+                         handle_parsing_errors=True
+                         )
 
 
 # response = agent_executor.invoke({"arg1": "Shipper", "arg2": "Destination of cargoo"})
 
-prompt = load_prompt(r"C:\Users\vagga\Desktop\RAG\RAG_Query\Prompts\Info_extraction_prompt.txt")
+prompt = load_prompt("/home/eathanasakis/Thesis/RAG_Query/Prompts/Info_extraction_prompt.txt")
 
-response = agent_executor.invoke({"messages": [HumanMessage(content=prompt)]})["messages"]
+response = agent.invoke("Who is the Shipper?")
 
-final_message = next(
-    (message for message in response if isinstance(message, AIMessage) and message.content),
-    None
-).content
+print(response)
 
-print(final_message)
-
-
-
-
-# template ="""
-# Give me the most relevant doc regarding the {topic}
-
-# """
-
-# template ="""
-# Who is the {topic}
-
-# """
-
-# prompt = ChatPromptTemplate.from_template(template=template)
-
-
-
-
-
-# chain = prompt | llm
-
-# #response = chain.invoke({"topic" : "SHIPPER"})
-# result = chain.invoke({"topic":"Shipper"})
 

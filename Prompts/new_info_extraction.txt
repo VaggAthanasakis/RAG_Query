@@ -1,5 +1,5 @@
 prompt = f"""
-Please extract the following details from the provided document:
+Please extract the following details from the provided vector store index:
 
 Shipper: (Extract name after keyword "Shipper" or "Shipper name" or "Exporter")
 CONSIGNEE: (Extract name after keyword "Consignee" or "Consignee name")
@@ -10,6 +10,5 @@ Total Weight: (Extract weight, look for keywords like "Total weight" or "Gross w
 
 
 After that, convert the output into json format.
-In the final answer, give only the json
-Do not include any input or ouput, give ONLY the json
+
 """
